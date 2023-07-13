@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: #09B451;
+  border: none;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}/*# sourceMappingURL=style.css.map */
