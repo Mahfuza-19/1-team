@@ -27,6 +27,20 @@ button {
   margin: 0 auto;
 }
 
+._Course_section h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+._Course_section p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+._Course_section .list a {
+  display: none;
+}
+
 #Contact__section {
   background-image: url(../Imags/CTA_Contact-bg.png);
   background-size: cover;
@@ -152,7 +166,7 @@ footer {
   padding: 63px 0;
 }
 footer .container {
-  max-width: 390px;
+  width: 390px;
   margin: 0 auto;
 }
 footer .footer {
@@ -251,7 +265,7 @@ footer .footer .Footer_menu .footer_icons a i {
     padding: 123px 0 52px 0;
   }
   footer .container {
-    max-width: 1240px;
+    width: 90%;
     margin: 0 auto;
   }
   footer .footer {
@@ -300,7 +314,7 @@ footer .footer .Footer_menu .footer_icons a i {
   }
   footer .footer .Footer_menu .footer_links {
     display: flex;
-    gap: 77px;
+    gap: 74px;
     margin-bottom: 30px;
   }
   footer .footer .Footer_menu .footer_links .f-a,

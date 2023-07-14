@@ -4,7 +4,7 @@ footer {
   color: $color-2;
   padding: 63px 0;
   .container {
-    max-width: 390px;
+    width: 390px;
     margin: 0 auto;
   }
   .footer {
@@ -109,7 +109,7 @@ footer {
     color: $color-2;
     padding: 123px 0 52px 0;
     .container {
-      max-width: 1240px;
+      width: 90%;
       margin: 0 auto;
     }
     .footer {
@@ -159,7 +159,7 @@ footer {
         margin-bottom: 111px;
         .footer_links {
           display: flex;
-          gap: 77px;
+          gap: 74px;
           margin-bottom: 30px;
           .f-a,
           .f-b {

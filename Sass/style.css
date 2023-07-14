@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: #09B451;
+  border: none;
+  color: #FFF;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+._Course_section h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+._Course_section p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+}
+._Course_section .list a {
+  display: none;
+}
+
+#Contact__section {
+  background-image: url(../Imags/CTA_Contact-bg.png);
+  background-size: cover;
+  padding: 87px 0 70px 0;
+}
+#Contact__section .Contact_img {
+  display: none;
+}
+#Contact__section .Contact_text h2 {
+  color: #FFF;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+}
+#Contact__section .Contact_text p {
+  color: #FFF;
+  text-align: center;
+  font-family: Open Sans;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}/*# sourceMappingURL=style.css.map */
