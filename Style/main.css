@@ -27,6 +27,103 @@ button {
   margin: 0 auto;
 }
 
+nav {
+  padding: 28px 0;
+  margin-bottom: 10px;
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav_left {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+.nav_left ul {
+  display: none;
+}
+
+.logo img {
+  width: 94px;
+  height: 29px;
+}
+
+.search, .nav_btn {
+  display: none;
+}
+
+#hero {
+  padding-top: 66.55px;
+  padding-bottom: 51.31px;
+  background-image: url(/Imags/Frame\ 6516_hero_bac.svg);
+  background-size: 640px 1067px;
+  background-repeat: no-repeat;
+}
+#hero .container {
+  display: grid;
+  gap: 69.43px;
+}
+
+.h_left h1 {
+  max-width: 300px;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+}
+.h_left h1 span {
+  color: #09B451;
+}
+.h_left button {
+  padding: 20px 42px;
+  border-radius: 5px;
+}
+
+.h_right img {
+  max-width: 100%;
+}
+
+.h_down {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 24px;
+  column-gap: 16px;
+}
+
+.info {
+  display: flex;
+  gap: 10.74px;
+  align-items: center;
+  padding: 9px 7px;
+  width: 177px;
+  height: 54px;
+  background: #DFF;
+  border-radius: 4.47px;
+}
+.info p {
+  font-size: 14.318px;
+  font-weight: 400;
+}
+
+.info2 {
+  display: flex;
+  gap: 10.74px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 9px 15px;
+  width: 210px;
+  height: 54px;
+  background: #DFF;
+  border-radius: 4.47px;
+}
+.info2 p {
+  font-size: 14.318px;
+  font-weight: 400;
+}
+
 ._Course_section h3 {
   font-size: 16px;
   font-weight: 500;
