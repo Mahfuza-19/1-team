@@ -23,19 +23,31 @@ button {
 }
 
 .container {
-  max-width: 95%;
+  max-width: 90%;
   margin: 0 auto;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+body {
+  overflow-x: hidden;
 }
 
 #Course__section .cartegories {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 74px 0 24px;
 }
 #Course__section .cartegories h3 {
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+  max-width: 225px;
 }
 #Course__section .cartegories p {
   font-size: 14px;
@@ -545,6 +557,7 @@ button {
     font-size: 32px;
     font-weight: 600;
     line-height: normal;
+    max-width: 754px;
   }
   #Course__section .container .cartegories p {
     font-size: 24px;
@@ -602,7 +615,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 24px;
+  padding: 49px 0 24px;
 }
 .Popular__section2 .popular h3 {
   font-size: 16px;
@@ -788,10 +801,13 @@ button {
     align-items: center;
     justify-content: center;
   }
+
+
   #Popular__section .container .courses .course:hover {
     border: 1px solid #09B451;
 
   }
+
 }
 #Contact__section {
   background-image: url(../Imags/CTA_Contact-bg.png);
@@ -917,10 +933,6 @@ footer {
   color: #FFF;
   padding: 63px 0;
 }
-footer .container {
-  width: 390px;
-  margin: 0 auto;
-}
 footer .footer {
   display: flex;
   flex-direction: column-reverse;
@@ -1015,10 +1027,6 @@ footer .footer .Footer_menu .footer_icons a i {
     background-color: #000;
     color: #FFF;
     padding: 123px 0 52px 0;
-  }
-  footer .container {
-    width: 90%;
-    margin: 0 auto;
   }
   footer .footer {
     display: flex;
