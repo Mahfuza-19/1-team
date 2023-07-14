@@ -309,7 +309,7 @@ footer .footer .Footer_menu .footer_icons a i {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 91px;
+    justify-content: space-between;
     margin-bottom: 111px;
   }
   footer .footer .Footer_menu .footer_links {

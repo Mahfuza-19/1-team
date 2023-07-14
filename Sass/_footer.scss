@@ -156,7 +156,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 91px;
+       justify-content: space-between;
         margin-bottom: 111px;
         .footer_links {
           display: flex;
