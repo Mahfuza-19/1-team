@@ -544,7 +544,7 @@ body {
     font-size: 16px;
     font-weight: 400;
     line-height: 26px;
-=======
+  }
 @media (min-width: 1440px) {
   #Course__section .container {
     max-width: 1240px;
@@ -802,7 +802,10 @@ body {
     justify-content: center;
   }
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> ba8d7416088f3a74b093fca6b14dd5c6b28fc926
   #Popular__section .container .courses .course:hover {
     border: 1px solid #09B451;
 
@@ -1141,5 +1144,5 @@ footer .footer .Footer_menu .footer_icons a i {
     font-size: 32px;
   }
 }
-
+}
 /*# sourceMappingURL=main.css.map */
