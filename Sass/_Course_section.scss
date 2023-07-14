@@ -1,12 +1,15 @@
 #Course__section {
+  
   .cartegories {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 74px 0 24px;
     h3 {
       font-size: 16px;
       font-weight: 500;
       line-height: normal;
+      max-width: 225px;
     }
     p {
       font-size: 14px;
@@ -22,6 +25,9 @@
     }
     .img-text {
       position: relative;
+      // animation-name: sevinch;
+      // animation-duration: 4s;
+      // animation-iteration-count: 3;
       img {
         max-width: 116px;
         border-radius: 5px;
@@ -49,6 +55,17 @@
       
     }
   }
+  // @keyframes sevinch {
+  //   0%{
+  //     right:0;
+  //     top:0;
+  //   }
+  //   100%{
+  //     right: 100%;
+  //     top:0;
+  //   }
+    
+  // }
 }
 
 @media (min-width: 1440px) {
@@ -63,6 +80,7 @@
           font-size: 32px;
           font-weight: 600;
           line-height: normal;
+          max-width: 754px;
         }
         p {
           font-size: 24px;
@@ -73,6 +91,7 @@
       .list {
         gap: 32px;
         position: relative;
+     
         a {
           border-radius: 100px;
           background: #fff;

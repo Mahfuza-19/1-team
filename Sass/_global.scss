@@ -36,6 +36,16 @@ button{
 }
 
 .container{
-    max-width: 95%;
+    max-width: 90%;
     margin:0 auto;
+}
+@media  (min-width:1440px) {
+    .container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+}
+body{
+    overflow-x: hidden;
 }
