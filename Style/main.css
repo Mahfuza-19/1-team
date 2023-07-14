@@ -341,28 +341,340 @@ button {
   background-size: cover;
   padding: 87px 0 70px 0;
 }
+#Contact__section .container {
+  max-width: 380px;
+  margin: 0 auto;
+}
 #Contact__section .Contact_img {
   display: none;
+}
+#Contact__section .Contact_text {
+  text-align: center;
 }
 #Contact__section .Contact_text h2 {
   color: #FFF;
   text-align: center;
   font-family: "Open Sans", sans-serif;
-  font-size: 24px;
+  text-transform: capitalize;
+  font-size: 28px;
   font-weight: 700;
   line-height: 38px;
-  text-transform: capitalize;
   margin-bottom: 24px;
 }
 #Contact__section .Contact_text p {
   color: #FFF;
   text-align: center;
-  font-family: Open Sans;
+  font-family: "Open Sans", sans-serif;
   text-transform: capitalize;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 64px;
+}
+#Contact__section .Contact_text .Contact_btns {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+  justify-content: space-between;
+}
+#Contact__section .Contact_text .Contact_btns button {
+  border-radius: 5px;
+  padding: 20px 42px;
+}
+#Contact__section .Contact_text .Contact_btns .btn-white {
+  background-color: #FFF;
+  color: #09B451;
+}
+#Contact__section .Contact_text .Contact_btns button:hover {
+  background-color: #FFF;
+  color: #09B451;
+  cursor: pointer;
+}
+#Contact__section .Contact_text .Contact_btns .btn-white:hover {
+  background-color: #09B451;
+  color: #FFF;
+}
+
+@media screen and (min-width: 764px) {
+  #Contact__section {
+    background-image: url(../Imags/CTA_Contact-bg.png);
+    background-size: cover;
+    padding: 0px 0 76px 0;
+    margin-top: 30px;
+  }
+  #Contact__section .container {
+    max-width: 1240px;
+  }
+  #Contact__section .contact {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 109px;
+  }
+  #Contact__section .Contact_img {
+    display: flex;
+    position: relative;
+    bottom: 50px;
+  }
+  #Contact__section .Contact_text {
+    text-align: start;
+  }
+  #Contact__section .Contact_text h2 {
+    font-size: 42px;
+    text-align: left;
+    line-height: normal;
+  }
+  #Contact__section .Contact_text p {
+    text-align: start;
+    font-size: 24px;
+    line-height: normal;
+    margin-bottom: 89px;
+  }
+  #Contact__section .Contact_text .Contact_btns {
+    display: flex;
+    gap: 32px;
+    align-items: start;
+    justify-content: left;
+  }
+  #Contact__section .Contact_text .Contact_btns button {
+    border-radius: 5px;
+    padding: 20px 42px;
+  }
+  #Contact__section .Contact_text .Contact_btns .btn-white {
+    background-color: #FFF;
+    color: #09B451;
+  }
+  #Contact__section .Contact_text .Contact_btns button:hover {
+    background-color: #FFF;
+    color: #09B451;
+    cursor: pointer;
+  }
+  #Contact__section .Contact_text .Contact_btns .btn-white:hover {
+    background-color: #09B451;
+    color: #FFF;
+  }
+}
+footer {
+  background-color: #000;
+  color: #FFF;
+  padding: 63px 0;
+}
+footer .container {
+  width: 390px;
+  margin: 0 auto;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer .footer .Footer_log {
+  text-align: left;
+  margin-bottom: 48px;
+}
+footer .footer .Footer_log h3 {
+  color: #FFF;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+footer .footer .Footer_log form input {
+  padding: 15px 254px 14px 13px;
+  background: #FFF;
+  color: #3BD27B;
+  font-family: "Poppins", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: normal;
+  border: none;
+  border-radius: 7px;
+}
+footer .footer .Footer_log form button {
+  position: relative;
+  padding: 11px 15px 10px 14px;
+  bottom: 42.8px;
+  left: 290px;
+  border-radius: 0 7px 7px 0;
+}
+footer .footer .Footer_log form button:hover {
+  background-color: #FFF;
+  color: #09B451;
+  border: 1px solid #09B451;
+  cursor: pointer;
+}
+footer .footer .Footer_menu {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer .footer .Footer_menu .footer_links {
+  display: flex;
+  gap: 64px;
+  margin-bottom: 30px;
+}
+footer .footer .Footer_menu .footer_links .f-a,
+footer .footer .Footer_menu .footer_links .f-b {
+  display: none;
+}
+footer .footer .Footer_menu .footer_links ol li {
+  margin-bottom: 8px;
+}
+footer .footer .Footer_menu .footer_links ol li a {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25px;
+  text-transform: capitalize;
+}
+footer .footer .Footer_menu .footer_text h3 {
+  color: #FFF;
+  font-family: "Open Sans", sans-serif;
+  font-size: 32.8px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 24px;
+}
+footer .footer .Footer_menu .footer_text p {
+  display: none;
+}
+footer .footer .Footer_menu .footer_icons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+footer .footer .Footer_menu .footer_icons a {
+  color: "Open Sans", sans-serif;
+}
+footer .footer .Footer_menu .footer_icons a i {
+  font-size: 32px;
+}
+
+@media screen and (min-width: 764px) {
+  footer {
+    background-color: #000;
+    color: #FFF;
+    padding: 123px 0 52px 0;
+  }
+  footer .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  footer .footer {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footer .Footer_log {
+    text-align: center;
+    margin-bottom: 0;
+  }
+  footer .footer .Footer_log h3 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 18px;
+    text-align: center;
+    margin-left: 70px;
+  }
+  footer .footer .Footer_log form input {
+    padding: 19px 291px 18px 18px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 200px;
+    border-radius: 7px;
+  }
+  footer .footer .Footer_log form button {
+    position: relative;
+    left: -115px;
+    top: 1.1px;
+    padding: 20px 18px;
+    border-radius: 0 7px 7px 0;
+  }
+  footer .footer .Footer_log form button:hover {
+    background-color: #FFF;
+    color: #09B451;
+    border: 1px solid #09B451;
+    cursor: pointer;
+  }
+  footer .footer .Footer_menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 91px;
+    margin-bottom: 111px;
+  }
+  footer .footer .Footer_menu .footer_links {
+    display: flex;
+    gap: 74px;
+    margin-bottom: 30px;
+  }
+  footer .footer .Footer_menu .footer_links .f-a,
+  footer .footer .Footer_menu .footer_links .f-b {
+    display: inline-block;
+  }
+  footer .footer .Footer_menu .footer_links .f-a li,
+  footer .footer .Footer_menu .footer_links .f-b li {
+    margin-bottom: 8px;
+  }
+  footer .footer .Footer_menu .footer_links .f-a li a,
+  footer .footer .Footer_menu .footer_links .f-b li a {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: capitalize;
+  }
+  footer .footer .Footer_menu .footer_links ol li {
+    margin-bottom: 8px;
+  }
+  footer .footer .Footer_menu .footer_links ol li a {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: capitalize;
+  }
+  footer .footer .Footer_menu .footer_text h3 {
+    color: #FFF;
+    font-family: "Open Sans", sans-serif;
+    font-size: 32.8px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 24px;
+  }
+  footer .footer .Footer_menu .footer_text p {
+    max-width: 296px;
+    display: inline-block;
+    color: #FFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    margin-bottom: 31px;
+  }
+  footer .footer .Footer_menu .footer_icons {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  footer .footer .Footer_menu .footer_icons a {
+    color: "Open Sans", sans-serif;
+  }
+  footer .footer .Footer_menu .footer_icons a i {
+    font-size: 32px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
