@@ -207,29 +207,12 @@ body {
   #Course__section2 {
     display: block;
   }
-  @keyframes example {
-    100% {
-      left: 0px;
-    }
-    0% {
-      left: 0px;
-    }
-  }
   #Course__section2 .cartegories h3 {
     font-size: 20px;
     max-width: 300px;
   }
   #Course__section2 .cartegories p {
     font-size: 18px;
-  }
-  #Course__section2 .list .text-img {
-    position: relative;
-    animation-name: example;
-    animation-duration: 3s;
-    animation-fill-mode: backwards;
-    display: flex;
-    gap: 18px;
-    width: 100%;
   }
   #Course__section2 .list .text-img .categorie img {
     width: 160px;
