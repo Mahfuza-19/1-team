@@ -28,20 +28,25 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: $color-1;
-  border: none;
-  color: $color-2;
-  font-weight: 600;
-  font-size: 16px;
+button{
+    background-color:$color-1 ;
+    border: none;
+    color:$color-2;
+    font-weight: 600;
+    font-size: 16px;
 }
 
-.container {
-  max-width: 95%;
-  margin: 0 auto;
+.container{
+    max-width: 90%;
+    margin:0 auto;
 }
-@media screen and (min-width: 860px) {
-  .container {
-    max-width: 1300px;
-  }
+@media  (min-width:1440px) {
+    .container{
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    
+}
+body{
+    overflow-x: hidden;
 }
