@@ -281,6 +281,7 @@ nav{
     }
     .h_down{
         flex-wrap: nowrap;
+        display: flex;
         justify-content: space-between;
         row-gap:0;
         column-gap: 0;
