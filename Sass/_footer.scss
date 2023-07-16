@@ -24,7 +24,7 @@ footer {
       form {
         // position: absolute;
         input {
-          padding: 15px 254px 11px 13px;
+          padding: 15px 244px 11px 13px;
           background: $color-2;
           color: $color-6;
           font-family: $font-2;
@@ -35,9 +35,12 @@ footer {
           border-radius: 7px;
         }
         button {
-        margin-left: -108px;
-          padding: 9px 15px 10px 14px;
-          border-radius: 0 7px 7px 0;
+            position: relative;
+          margin-left: 280px;
+            padding: 9px 15px 10px 14px;
+            border-radius: 0 7px 7px 0;
+            bottom: 40.5px;
+          
         }
         button:hover {
           cursor: pointer;
@@ -49,7 +52,7 @@ footer {
       flex-direction: column-reverse;
       .footer_links {
         display: flex;
-        gap: 64px;
+        justify-content: space-between;
         margin-bottom: 30px;
         .f-a,
         .f-b {
@@ -131,7 +134,9 @@ footer {
             margin-left: 100px;
           }
           button {
+            position: relative;
         margin-left: -100px;
+        bottom: 0;
 
             padding: 20px 18px;
             border-radius: 0 7px 7px 0;
@@ -255,6 +260,9 @@ footer {
           }
           button {
         margin-left: -100px;
+        position: relative
+        ;
+        bottom: 0;
 
             padding: 20px 18px;
             border-radius: 0 7px 7px 0;
