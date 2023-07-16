@@ -1,0 +1,265 @@
+.r_box {
+  padding: 48px 0;
+  h3 {
+    display: none;
+  }
+  .r_box1 {
+    display: flex;
+    gap: 26px;
+
+    h2 {
+      width: 252px;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 36px; /* 150% */
+
+      span {
+        color: #09b451;
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 36px;
+        position: relative;
+
+        img {
+          width: 109px;
+          height: 6.104px;
+          position: absolute;
+          bottom: 0px;
+          right: 0px;
+        }
+      }
+    }
+
+    .r_imgs {
+      display: flex;
+      padding: 8.75px;
+      justify-content: center;
+      align-items: center;
+      gap: 28px;
+    }
+  }
+
+  .r_box2 {
+    display: flex;
+    gap: 16px;
+    padding-top: 24px;
+
+    .r_box2_1 {
+      padding: 16px 14px 11px;
+
+      .r_box2_1_1 {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        img {
+          width: 28px;
+          height: 28px;
+        }
+
+        h4 {
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        h5 {
+          color: #09b451;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+
+      p {
+        width: 155px;
+        height: 82px;
+        color: var(--gray-1, #333);
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 12px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+
+    .r_box2_2 {
+      padding: 16px 14px 11px;
+
+      .r_box2_2_2 {
+        display: flex;
+        gap: 12px;
+        align-items: center;
+
+        img {
+          width: 28px;
+          height: 28px;
+        }
+
+        h4 {
+          font-size: 12px;
+          font-weight: 600;
+        }
+
+        h5 {
+          color: #09b451;
+          font-size: 12px;
+          font-weight: 400;
+        }
+      }
+
+      p {
+        width: 155px;
+        height: 82px;
+        color: var(--gray-1, #333);
+        font-size: 12px;
+        font-weight: 400;
+        padding-top: 12px;
+
+        span {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  container {
+    max-width: 1240px;
+    margin: 0 auto;
+  }
+
+  .r_box {
+    h3 {
+      display: block;
+      color: var(--pri-11, #242243);
+      font-family: Poppins;
+      font-size: 32px;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .r_box1 {
+      display: flex;
+      flex-direction: column;
+      padding-right: 34px;
+      align-items: start;
+      //   display: flex;
+      // flex-direction: row-reverse;
+      // width: 1240px;
+      // height: 504px;
+      // justify-content: start;
+
+      h2 {
+        width: 382px;
+        font-size: 48px;
+        font-weight: 700;
+        line-height: normal;
+
+        span {
+          font-size: 48px;
+          font-weight: 700;
+          position: relative;
+          // display: none;
+
+          img {
+            position: absolute;
+            width: 239.5px;
+            height: 11.331px;
+            stroke-width: 4px;
+          }
+        }
+      }
+
+      .r_imgs {
+        margin-left: 0;
+        // display: none;
+      }
+    }
+
+    .r_boxx {
+      display: flex;
+    }
+
+    .r_box2 {
+      padding: 41px auto 50px;
+
+      .r_box2_1 {
+        padding: 59px 48px 48px;
+
+        .r_box2_1_1 {
+          display: flex;
+          gap: 30px;
+          align-items: start;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+
+          h4 {
+            font-size: 20px;
+            font-weight: 700;
+          }
+
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+
+        p {
+          width: 384px;
+          height: 151px;
+          color: var(--gray-1, #333);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+
+          span {
+            display: inline-block;
+          }
+        }
+      }
+
+      .r_box2_2 {
+        padding: 59px 48px 48px;
+
+        .r_box2_2_2 {
+          display: flex;
+          gap: 30px;
+          align-items: start;
+
+          img {
+            width: 70px;
+            height: 70px;
+          }
+
+          h4 {
+            font-size: 20px;
+            font-weight: 700;
+          }
+
+          h5 {
+            font-size: 20px;
+            font-weight: 600;
+          }
+        }
+
+        p {
+          width: 384px;
+          height: 151px;
+          color: var(--gray-1, #333);
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 30px;
+
+          span {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
