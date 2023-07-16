@@ -445,7 +445,7 @@ nav {
     margin: 64px 0;
     display: flex;
     align-items: center;
-    gap: 480px;
+    justify-content: space-between;
   }
   #Course__section .cartegories h3 {
     font-size: 32px;
@@ -506,7 +506,7 @@ nav {
     left: 15px;
   }
   #Course__section .slider .next {
-    left: 1185px;
+    left: 1165px;
   }
 }
 #Popular__section {
@@ -703,6 +703,7 @@ nav {
     max-width: 282px;
     text-transform: capitalize;
   }
+  
   #Popular__section .courses .course .h5-a a i {
     font-size: 18px;
     color: #09b451;
