@@ -2,12 +2,12 @@
   display: none;
 }
 
-.Popular__section2 {
+#Popular__section_lg {
   .popular {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 24px;
+    padding: 49px 0 24px;
     h3 {
       font-size: 16px;
       font-weight: 600;
@@ -25,16 +25,53 @@
   }
   .courses {
     display: grid;
-    grid-template-columns: repeat(2, 182px);
+    grid-template-columns: repeat(2, 1fr);
     gap: 16px;
     .course {
       box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
       border-radius: 5px;
-      max-width: 182px;
       border-radius: 4px;
       img {
         border-top-left-radius: 4px;
         border-top-right-radius: 4px;
+        width: 100%;
+      }
+
+      .h5-a {
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12px 0 13px;
+        position: relative;
+        h5 {
+          font-size: 14px;
+          font-weight: 500;
+          line-height: 20px;
+          max-width: 145px;
+        }
+        .star-num {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          text-align: center;
+          left: 150px;
+          bottom: 22px;
+
+          a {
+            i {
+              font-size: 8px;
+              color: $color-1;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          p {
+            font-size: 8px;
+            font-weight: 400;
+          }
+        }
       }
       h6 {
         color: $color-1;
@@ -54,6 +91,7 @@
           font-weight: 400;
           line-height: normal;
           display: flex;
+          align-items: center;
           img {
             width: 12px;
             height: 12px;
@@ -63,39 +101,54 @@
           }
         }
       }
-      .h5-a {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 12px 0 13px;
-        position: relative;
-        h5 {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 20px;
-          max-width: 145px;
-        }
-        .star-num {
-          position: absolute;
+    }
+  }
+}
+@media (min-width: 768px) {
+  // #Popular__section {
+  //   display: none;
+  // }
+  #Popular__section_lg {
+    // display: block;
+    .popular {
+      h3 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+    .courses {
+      .course {
+        .h5-a {
+          position: initial;
           display: flex;
           align-items: center;
-          gap: 4px;
-          text-align: center;
-          left: 150px;
-          bottom: 22px;
-          a {
-            i {
-              font-size: 8px;
-              color: $color-1;
-              display: flex;
-              align-items: center;
-              justify-content: center;
+          justify-content: space-between;
+          h5 {
+            font-size: 18px;
+            max-width: 200px;
+          }
+          .star-num {
+            position: initial;
+            a {
+              i {
+                font-size: 15px;
+              }
+            }
+            p {
+              font-size: 15px;
             }
           }
-
+        }
+        h6 {
+          font-size: 20px;
+        }
+        .number {
           p {
-            font-size: 8px;
-            font-weight: 400;
+            font-size: 16px;
+            img {
+              width: 16px;
+              height: 16px;
+            }
           }
         }
       }
@@ -103,102 +156,98 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
-  .Popular__section2 {
+@media (min-width: 1440px) {
+  #Popular__section_lg {
     display: none;
   }
   #Popular__section {
     display: block;
-    .container {
-      max-width: 1240px;
-      margin: 0 auto;
-      .popular {
-        padding-top: 98px;
+    .popular {
+      padding-top: 98px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      button {
+        padding: 8px 16px;
+        gap: 10px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        h3 {
-          font-size: 32px;
-          font-weight: 600;
-          line-height: normal;
-          text-transform: capitalize;
-        }
-        button {
-          padding: 8px 16px;
-          gap: 10px;
-          border-radius: 50px;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: normal;
-          display: flex;
-          i {
-            color: $color-2;
-          }
+        i {
+          color: $color-2;
         }
       }
-      .courses {
-        margin-top: 64px;
-        display: grid;
-        gap: 32px;
-        grid-template-columns: repeat(3, 392px);
-        .course {
-          border-radius: 10px;
-          box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+    }
+    .courses {
+      margin-top: 64px;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(3, 1fr);
+      .course {
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
 
-          img {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+        img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+        }
+        .h5-a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 24px 24px 42px 24px;
+          h5 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: normal;
+            max-width: 282px;
+            text-transform: capitalize;
           }
-          .h5-a {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 24px 42px 24px;
-            h5 {
-              font-size: 24px;
-              font-weight: 500;
-              line-height: normal;
-              max-width: 282px;
-              text-transform: capitalize;
-            }
-            a {
-              i {
-                font-size: 18px;
-                color: $color-1;
-              }
-            }
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: normal;
-            }
-          }
-          .number {
-            padding: 0 24px 28px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            h5 {
+          a {
+            i {
+              font-size: 18px;
               color: $color-1;
-              font-size: 24px;
-              font-weight: 600;
-              line-height: normal;
             }
-            p {
-              font-size: 16px;
-              font-weight: 500;
-              line-height: normal;
-              display: flex;
-              img {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              }
-            }
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
           }
         }
-        .course:hover{
-            border: 1px solid $color-1;
+        .number {
+          padding: 0 24px 28px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h5 {
+            color: $color-1;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            img {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
       }
     }

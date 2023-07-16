@@ -10,10 +10,10 @@
   background-image: url(../Imags/CTA_Contact-bg.png);
   background-size: cover;
   padding: 87px 0 70px 0;
-  .container {
-   max-width: 380px;
-    margin: 0 auto;
-  }
+  // .container {
+  //  max-width: 380px;
+  //   margin: 0 auto;
+  // }
   .Contact_img {
     display: none;
   }
@@ -67,9 +67,69 @@
     background-size: cover;
     padding: 0px 0 76px 0;
     margin-top: 30px;
-    .container {
-     max-width: 1240px;
+    // .container {
+    //  max-width: 90%;
+    // }
+    .contact{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 109px;
     }
+    .Contact_img {
+      display: flex;
+      position: relative;
+      bottom: 50px;
+    }
+    .Contact_text {
+      text-align: start;
+      h2 {
+        font-size: 42px;
+        text-align: left;
+        line-height: normal;
+      }
+      p {
+        text-align: start;
+        font-size: 24px;
+        line-height: normal;
+        margin-bottom: 89px;
+      }
+      .Contact_btns {
+        display: flex;
+        gap: 32px;
+        align-items: start;
+      justify-content:left;
+        button {
+          border-radius: 5px;
+          padding: 20px 42px;
+        }
+        .btn-white {
+          background-color: $color-2;
+          color: $color-1;
+        }
+        button:hover{
+          background-color: $color-2;
+          color: $color-1;
+          cursor: pointer;
+        }
+        .btn-white:hover{
+          background-color: $color-1;
+          color: $color-2;
+  
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:1440px){
+  #Contact__section {
+    background-image: url(../Imags/CTA_Contact-bg.png);
+    background-size: cover;
+    padding: 0px 0 76px 0;
+    margin-top: 30px;
+    // .container {
+    //  max-width: 1240px;
+    // }
     .contact{
       display: flex;
       align-items: center;

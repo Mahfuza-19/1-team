@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/a3d3872bb7.js"
       crossorigin="anonymous"
     ></script>
+
   </head>
   <body>
     <!-- ====Figma start==== -->
@@ -16,9 +17,9 @@
     <!-- header -->
     <header>
       <nav>
-        <div class="container">
+        <div class="container navbar">
           <div class="nav_left">
-            <img src="Icons/charm_menu-hamburgermenu_bar.svg" alt="menu" />
+            <div class="menu_bar"><img src="Icons/charm_menu-hamburgermenu_bar.svg" alt="menu"></div>
             <div class="logo">
               <img src="Icons/Group 177_nav_logo.svg" alt="nav_logo" />
             </div>
@@ -31,23 +32,29 @@
             </ul>
           </div>
           <div class="nav_right">
-            <img src="Icons/bx_search.svg" alt="search" />
-            <div class="nav_btn">
-              <a href="#">Login</a>
-              <button>Register</button>
+            <div class="search">
+              <img src="Icons/bx_search.svg" alt="search">
             </div>
-            <img src="Icons/carbon_user-avataruser.svg" alt="user" />
+            <div class="nav_btn">
+              <div class="oq_button"><button>Login</button></div>
+              <div class="yashil_btn"><button>Register</button></div>
+            </div>
+            <div class="nav_menu">
+              <img src="Icons/carbon_user-avataruser.svg" alt="user">
+            </div>
           </div>
         </div>
       </nav>
       <section id="hero">
         <div class="container">
-          <div class="h_left">
-            <h1>Quality <span>Education</span> By Any Means Necessary.</h1>
-            <button>Get Started</button>
-          </div>
-          <div class="h_right">
-            <img src="Imags/Frame 6514Header_img.png" alt="header_img" />
+          <div class="h_tepa">
+            <div class="h_left">
+              <h1>Quality <span>Education</span> By Any Means Necessary.</h1>
+              <button>Get Started</button>
+            </div>
+            <div class="h_right">
+              <img src="Imags/image_header_img.png" alt="header_img">
+            </div>
           </div>
           <div class="h_down">
             <div class="info">
@@ -66,8 +73,8 @@
               <img src="Icons/book.svg" alt="book" />
               <p>10k Courses</p>
             </div>
-            <div class="info">
-              <img src="Icons/Frame 6520_qo'llar_.svg" alt="qullar" />
+            <div class="info2">
+              <img src="Icons/Frame 6520_qo'llar_.svg" alt="qullar">
               <p>Hand-on activities</p>
             </div>
           </div>
@@ -85,29 +92,86 @@
             <h3>Choose favourite course from top cartegories</h3>
             <p>See all</p>
           </div>
-         <marquee behavior="" direction="">
-          <div class="list">
-            <a class="left" href="#icon"><i class="fa-solid fa-angle-left"></i></a>
-            <div class="img-text">
+          <div class="slider">
+            <!-- <a class="left" href="#icon"><i class="fa-solid fa-angle-left"></i></a> -->
+            <div class="slides">
+            <div class="slide">
               <img src="Imags/Component 21-marketing.png" alt="" />
               <p class="p1">Marketing</p>
             </div>
-            <div class="img-text">
+            <div class="slide">
               <img src="Imags/Component 23-Desgin.png" alt="" />
               <p class="p2">Design</p>
             </div>
-            <div class="img-text">
+            <div class="slide">
               <img src="Imags/Component 25-progerm.png" alt="" />
               <p class="p3">Programming</p>
             </div>
-            <div class="img-text">
-              <img src="Imags/Component 23-Desgin.png" alt="" />
+            <div class="slide">
+              <img src="Imags/Component 22-texnolog.png" alt="" />
               <p class="p4">Technology</p>
             </div>
-            <a class="right" href="#icon"><i class="fa-solid fa-angle-right"></i></a>
+            <div class="slide">
+              <img src="Imags/pexels-photo-3893546.jpeg" alt="" />
+              <p class="p5">Cooking</p>
+            </div>
+            <div class="slide">
+              <img src="Imags/health.jpg" alt="" />
+              <p class="p6">Health and Care</p>
+            </div>
+            <div class="slide">
+              <img src="Imags/pexels-photo.webp" alt="" />
+              <p class="p7">Photography</p>
+            </div>
           </div>
-         </marquee>
+            <!-- <a class="right" href="#icon"><i class="fa-solid fa-angle-right"></i></a> -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+         <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
         </div>
+      </section>
+
+      <section id="Course__section_lg">
+          <div class="cartegories container">
+            <h3>Choose favourite course from top cartegories</h3>
+            <p>See all</p>
+          </div>
+          <div class="list container">
+            <!-- <a class="left" href="#icon"><i class="fa-solid fa-angle-left"></i></a> -->
+            <div class="text-img">
+            <div class="categorie">
+              <img src="Imags/Component 21-marketing.png" alt="" />
+              <p class="p1">Marketing</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/Component 23-Desgin.png" alt="" />
+              <p class="p2">Design</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/Component 25-progerm.png" alt="" />
+              <p class="p3">Programming</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/Component 22-texnolog.png" alt="" />
+              <p class="p4">Technology</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/pexels-photo-3893546.jpeg" alt="" />
+              <p class="p5">Cooking</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/health.jpg" alt="" />
+              <p class="p6">Health and Care</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/pexels-photo.webp" alt="" />
+              <p class="p7">Photography</p>
+            </div>
+          </div>
+            <!-- <a class="right" href="#icon"><i class="fa-solid fa-angle-right"></i></a> -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+         <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
       </section>
       <section id="Popular__section">
         <div class="container">
@@ -200,14 +264,8 @@
           </div>
         </div>
       </section>
-      <section class="Popular__section2">
+      <section id="Popular__section_lg">
         <div class="container">
-
-          <h3>Most Popular courses</h3>
-          <button>
-            <a href="#icon"><i class="fa-solid fa-chevron-down"></i>Sort by</a>
-          </button>
-
           <div class="popular">
             <h3>Most Popular courses</h3>
             <button>
@@ -215,97 +273,22 @@
               by
             </button>
           </div>
-
           <div class="courses">
             <div class="course">
               <img src="Imags/section2_img_1.png" alt="" />
               <div class="h5-a">
                 <h5>Learn Marketing from Top Instructors.</h5>
-
-                <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                <p>4.5</p>
-              </div>
-              <h5>30.5$</h5>
-              <div class="number">
-                <p>6 weeks</p>
-                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-              </div>
-            </div>
-            <div class="course">
-              <img src="Imags/section2_img_2.png" alt="" />
-              <div class="h5-a">
-                <h5>Learn Marketing from Top Instructors.</h5>
-                <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                <p>4.5</p>
-              </div>
-              <h5>30.5$</h5>
-              <div class="number">
-                <p>6 weeks</p>
-                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-              </div>
-            </div>
-            <div class="course">
-              <img src="Imags/section2_img_3.png" alt="" />
-              <div class="h5-a">
-                <h5>Learn Marketing from Top Instructors.</h5>
-                <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                <p>4.5</p>
-              </div>
-              <h5>30.5$</h5>
-              <div class="number">
-                <p>6 weeks</p>
-                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-              </div>
-            </div>
-            <div class="course">
-              <img src="Imags/section2_img_4.png" alt="" />
-              <div class="h5-a">
-                <h5>Learn Marketing from Top Instructors.</h5>
-                <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                <p>4.5</p>
-              </div>
-              <h5>30.5$</h5>
-              <div class="number">
-                <p>6 weeks</p>
-                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-              </div>
-            </div>
-            <div class="course">
-              <img src="Imags/section2_img_5.png" alt="" />
-              <div class="h5-a">
-                <h5>Learn Marketing from Top Instructors.</h5>
-                <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                <p>4.5</p>
-              </div>
-              <h5>30.5$</h5>
-              <div class="number">
-                <p>6 weeks</p>
-                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-              </div>
-            </div>
-            <div class="course">
-              <img src="Imags/section2_img_6.png" alt="" />
-              <div class="h5-a">
-                <h5>Learn Marketing from Top Instructors.</h5>
-                <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                <p>4.5</p>
-              </div>
-              <h5>30.5$</h5>
-
                 <div class="star-num">
                   <a href="#icon"><i class="fa-regular fa-star"></i></a>
                   <p>4.5</p>
                 </div>
               </div>
               <h6>30.5$</h6>
-
               <div class="number">
                 <p>6 weeks</p>
                 <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
               </div>
             </div>
-
-
             <div class="course">
               <img src="Imags/section2_img_2.png" alt="" />
               <div class="h5-a">
@@ -376,18 +359,20 @@
                 </div>
               </div>
               <h6>30.5$</h6>
+
               <div class="number">
                 <p>6 weeks</p>
                 <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
               </div>
             </div>
 
+
+            
           </div>
-        </div>
       </section>
 
       <!-- Abdumalik -->
-      <section id="Learn__section">
+      <section id="Learn__section ">
         <div class="container">
           <div class="Learn">
             <div class="Learn_top">
@@ -402,11 +387,11 @@
                 </button>
               </div>
             </div>
-            <div class="Learn_table">
+            <div class="Learn_table container">
               <div class="Learn_table_1">
                 <div class="Learn_img">
                   <img src="./Imags/Learn_1.png" alt="Learn" />
-                  <img src="./Icons/left.svg" alt="Left" />
+                  <img class="none" src="./Icons/left.svg" alt="Left" />
                 </div>
                 <div class="Learn_text">
                   <h5>All you need in Business Strategy</h5>
@@ -434,13 +419,10 @@
               <div class="Learn_table_1">
                 <div class="Learn_img">
                   <img src="./Imags/Learn_2.png" alt="Learn" />
-                  <img src="./Icons/left.svg" alt="Left" />
+                  <!-- <img src="./Icons/left.svg" alt="Left" /> -->
                 </div>
                 <div class="Learn_text">
-                  <h5>
-                    The amazing hack in Figma prototyping 4.5 6 weeks 1.5k
-                    Students 30.5$
-                  </h5>
+                  <h5>All you need in Business Strategy</h5>
                   <div class="Learn_text_icon">
                     <i
                       class="fa-sharp fa-regular fa-star"
@@ -464,14 +446,11 @@
               </div>
               <div class="Learn_table_1">
                 <div class="Learn_img">
-                  <img src="./Imags/Learn_3.png" alt="Learn" />
-                  <img src="./Icons/left.svg" alt="Left" />
+                  <img class="img_3" src="./Imags/Learn_3.png" alt="Learn" />
+                  <img class="none img_none" src="./Icons/right.svg" alt="Left" />
                 </div>
                 <div class="Learn_text">
-                  <h5>
-                    Introduction to basic game developement 4.5 6 weeks 1.5k
-                    Students 30.5$
-                  </h5>
+                  <h5>All you need in Business Strategy</h5>
                   <div class="Learn_text_icon">
                     <i
                       class="fa-sharp fa-regular fa-star"
@@ -505,11 +484,12 @@
             </div>
             <div class="Education_Table">
               <div class="Education_left">
-                <img src="./Imags/Education.png" alt="Education" />
+                <img class="edo" src="./Imags/Education.png" alt="Education" />
                 <div class="Education_div">
                   <img src="./Icons/Bag.svg" alt="Bag" />
                   <div class="Education_line">
-                    <h4>Job Opportunities</h4>
+                    <h3>Job</h3>
+                    <h4>Opportunities</h4>
                     <img src="./Icons/Line.svg" alt="Line" />
                   </div>
                 </div>
@@ -755,6 +735,7 @@
       </div>
     </footer>
     <!-- /Footer -->
+    <script src="js.js"></script> 
 
     <!-- ====Figma finish==== -->
   </body>
