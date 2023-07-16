@@ -3,10 +3,10 @@ footer {
   background-color: $color-3;
   color: $color-2;
   padding: 63px 0;
-  .container{
-    max-width: 410px;
-    margin:0 auto;
-  }
+  // .container{
+  //   max-width: 410px;
+  //   margin:0 auto;
+  // }
   .footer {
     display: flex;
     flex-direction: column-reverse;
@@ -104,9 +104,9 @@ footer {
     background-color: $color-3;
     color: $color-2;
     padding: 123px 0 52px 0;
-    .container{
-      max-width: 90%;
-    }
+    // .container{
+    //   max-width: 90%;
+    // }
     .footer {
       display: flex;
       flex-direction: column;
@@ -230,9 +230,6 @@ footer {
     background-color: $color-3;
     color: $color-2;
     padding: 123px 0 52px 0;
-    .container{
-     max-width: 1240px;
-    }
     .footer {
       display: flex;
       flex-direction: column;
