@@ -3,10 +3,6 @@ footer {
   background-color: $color-3;
   color: $color-2;
   padding: 63px 0;
-  .container {
-    width: 390px;
-    margin: 0 auto;
-  }
   .footer {
     display: flex;
     flex-direction: column-reverse;
@@ -109,10 +105,6 @@ footer {
     background-color: $color-3;
     color: $color-2;
     padding: 123px 0 52px 0;
-    .container {
-      width: 90%;
-      margin: 0 auto;
-    }
     .footer {
       display: flex;
       flex-direction: column;
@@ -156,7 +148,7 @@ footer {
         display: flex;
         flex-direction: row;
         align-items: center;
-        gap: 91px;
+       justify-content: space-between;
         margin-bottom: 111px;
         .footer_links {
           display: flex;

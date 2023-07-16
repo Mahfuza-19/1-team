@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- ====Figma start==== -->
-    
+
     <!-- header -->
     <header>
       <nav>
@@ -21,7 +21,7 @@
           <div class="nav_left">
             <div class="menu_bar"><img src="Icons/charm_menu-hamburgermenu_bar.svg" alt="menu"></div>
             <div class="logo">
-              <img src="Icons/Group 177_nav_logo.svg" alt="nav_logo">
+              <img src="Icons/Group 177_nav_logo.svg" alt="nav_logo" />
             </div>
             <ul>
               <li><a href="#">Home</a></li>
@@ -58,19 +58,19 @@
           </div>
           <div class="h_down">
             <div class="info">
-              <img src="Icons/math_phone.svg" alt="math">
+              <img src="Icons/math_phone.svg" alt="math" />
               <p>Problem Solving</p>
             </div>
             <div class="info">
-              <img src="Icons/chat.svg" alt="chat">
+              <img src="Icons/chat.svg" alt="chat" />
               <p>Live chat</p>
             </div>
             <div class="info">
-              <img src="Icons/Frame 6520_group_.svg" alt="group">
+              <img src="Icons/Frame 6520_group_.svg" alt="group" />
               <p>Group Reading</p>
             </div>
             <div class="info">
-              <img src="Icons/book.svg" alt="book">
+              <img src="Icons/book.svg" alt="book" />
               <p>10k Courses</p>
             </div>
             <div class="info2">
@@ -88,36 +88,100 @@
       <!-- Sevinch -->
       <section id="Course__section">
         <div class="container">
-          <h3>Choose favourite course from top cartegories</h3>
-          <p>See all</p>
-          <div class="list">
-            <a href="#icon"><i class="fa-solid fa-angle-left"></i></a>
-            <div class="img-text">
+          <div class="cartegories">
+            <h3>Choose favourite course from top cartegories</h3>
+            <p>See all</p>
+          </div>
+          <div class="slider">
+            <!-- <a class="left" href="#icon"><i class="fa-solid fa-angle-left"></i></a> -->
+            <div class="slides">
+            <div class="slide">
               <img src="Imags/Component 21-marketing.png" alt="" />
-              <p>Marketing</p>
+              <p class="p1">Marketing</p>
             </div>
-            <div class="img-text">
+            <div class="slide">
               <img src="Imags/Component 23-Desgin.png" alt="" />
-              <p>Design</p>
+              <p class="p2">Design</p>
             </div>
-            <div class="img-text">
+            <div class="slide">
               <img src="Imags/Component 25-progerm.png" alt="" />
-              <p>Programming</p>
+              <p class="p3">Programming</p>
             </div>
-            <div class="img-text">
+            <div class="slide">
               <img src="Imags/Component 22-texnolog.png" alt="" />
-              <p>Technology</p>
+              <p class="p4">Technology</p>
             </div>
-            <a href="#icon"><i class="fa-solid fa-angle-right"></i></a>
+            <div class="slide">
+              <img src="Imags/pexels-photo-3893546.jpeg" alt="" />
+              <p class="p5">Cooking</p>
+            </div>
+            <div class="slide">
+              <img src="Imags/health.jpg" alt="" />
+              <p class="p6">Health and Care</p>
+            </div>
+            <div class="slide">
+              <img src="Imags/pexels-photo.webp" alt="" />
+              <p class="p7">Photography</p>
+            </div>
+          </div>
+            <!-- <a class="right" href="#icon"><i class="fa-solid fa-angle-right"></i></a> -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+         <a class="next" onclick="changeSlide(1)">&#10095;</a>
           </div>
         </div>
       </section>
+
+      <section id="Course__section_lg">
+          <div class="cartegories container">
+            <h3>Choose favourite course from top cartegories</h3>
+            <p>See all</p>
+          </div>
+          <div class="list container">
+            <!-- <a class="left" href="#icon"><i class="fa-solid fa-angle-left"></i></a> -->
+            <div class="text-img">
+            <div class="categorie">
+              <img src="Imags/Component 21-marketing.png" alt="" />
+              <p class="p1">Marketing</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/Component 23-Desgin.png" alt="" />
+              <p class="p2">Design</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/Component 25-progerm.png" alt="" />
+              <p class="p3">Programming</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/Component 22-texnolog.png" alt="" />
+              <p class="p4">Technology</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/pexels-photo-3893546.jpeg" alt="" />
+              <p class="p5">Cooking</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/health.jpg" alt="" />
+              <p class="p6">Health and Care</p>
+            </div>
+            <div class="categorie">
+              <img src="Imags/pexels-photo.webp" alt="" />
+              <p class="p7">Photography</p>
+            </div>
+          </div>
+            <!-- <a class="right" href="#icon"><i class="fa-solid fa-angle-right"></i></a> -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+         <a class="next" onclick="changeSlide(1)">&#10095;</a>
+          </div>
+      </section>
       <section id="Popular__section">
         <div class="container">
-          <h3>Most Popular courses</h3>
-          <button>
-            <a href="#icon"><i class="fa-solid fa-chevron-down"></i>Sort by</a>
-          </button>
+          <div class="popular">
+            <h3>Most Popular courses</h3>
+            <button>
+              <a href="#icon"><i class="fa-solid fa-chevron-down"></i></a>Sort
+              by
+            </button>
+          </div>
           <div class="courses">
             <div class="course">
               <img src="Imags/section2_img1.png" alt="" />
@@ -128,7 +192,7 @@
               </div>
               <div class="number">
                 <p>6 weeks</p>
-                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+                <p><img src="Icons/ci_group.svg" alt="" /> 1.5k Students</p>
                 <h5>30.5$</h5>
               </div>
             </div>
@@ -159,7 +223,7 @@
               </div>
             </div>
             <div class="course">
-              <img src="Imags/section4_img1.png" alt="" />
+              <img src="Imags/section2_img4.png" alt="" />
               <div class="h5-a">
                 <h5>Learn photography with ease</h5>
                 <a href="#icon"><i class="fa-regular fa-star"></i></a>
@@ -172,7 +236,7 @@
               </div>
             </div>
             <div class="course">
-              <img src="Imags/section5_img1.png" alt="" />
+              <img src="Imags/section2_img5.png" alt="" />
               <div class="h5-a">
                 <h5>Be a pro in data analysis</h5>
                 <a href="#icon"><i class="fa-regular fa-star"></i></a>
@@ -185,7 +249,7 @@
               </div>
             </div>
             <div class="course">
-              <img src="Imags/section6_img1.png" alt="" />
+              <img src="Imags/section2_img6.png" alt="" />
               <div class="h5-a">
                 <h5>Ethical Harking is not hard as you think</h5>
                 <a href="#icon"><i class="fa-regular fa-star"></i></a>
@@ -200,97 +264,115 @@
           </div>
         </div>
       </section>
-      <section class="Popular__section2">
+      <section id="Popular__section_lg">
         <div class="container">
+          <div class="popular">
             <h3>Most Popular courses</h3>
             <button>
-              <a href="#icon"><i class="fa-solid fa-chevron-down"></i>Sort by</a>
+              <a href="#icon"><i class="fa-solid fa-chevron-down"></i></a>Sort
+              by
             </button>
-            <div class="courses">
-                <div class="course">
-                  <img src="Imags/section2_img_1.png" alt="" />
-                  <div class="h5-a">
-                    <h5>Learn Marketing from Top Instructors.</h5>
-                    <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                    <p>4.5</p>
-                  </div>
-                  <h5>30.5$</h5>
-                  <div class="number">
-                    <p>6 weeks</p>
-                    <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-                  </div>
+          </div>
+          <div class="courses">
+            <div class="course">
+              <img src="Imags/section2_img_1.png" alt="" />
+              <div class="h5-a">
+                <h5>Learn Marketing from Top Instructors.</h5>
+                <div class="star-num">
+                  <a href="#icon"><i class="fa-regular fa-star"></i></a>
+                  <p>4.5</p>
                 </div>
-                <div class="course">
-                    <img src="Imags/section2_img_2.png" alt="" />
-                    <div class="h5-a">
-                      <h5>Learn Marketing from Top Instructors.</h5>
-                      <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                      <p>4.5</p>
-                    </div>
-                    <h5>30.5$</h5>
-                    <div class="number">
-                      <p>6 weeks</p>
-                      <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-                    </div>
-                  </div>
-                  <div class="course">
-                    <img src="Imags/section2_img_3.png" alt="" />
-                    <div class="h5-a">
-                      <h5>Learn Marketing from Top Instructors.</h5>
-                      <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                      <p>4.5</p>
-                    </div>
-                    <h5>30.5$</h5>
-                    <div class="number">
-                      <p>6 weeks</p>
-                      <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-                    </div>
-                  </div>
-                  <div class="course">
-                    <img src="Imags/section2_img_4.png" alt="" />
-                    <div class="h5-a">
-                      <h5>Learn Marketing from Top Instructors.</h5>
-                      <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                      <p>4.5</p>
-                    </div>
-                    <h5>30.5$</h5>
-                    <div class="number">
-                      <p>6 weeks</p>
-                      <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-                    </div>
-                  </div>
-                  <div class="course">
-                    <img src="Imags/section2_img_5.png" alt="" />
-                    <div class="h5-a">
-                      <h5>Learn Marketing from Top Instructors.</h5>
-                      <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                      <p>4.5</p>
-                    </div>
-                    <h5>30.5$</h5>
-                    <div class="number">
-                      <p>6 weeks</p>
-                      <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-                    </div>
-                  </div>
-                  <div class="course">
-                    <img src="Imags/section2_img_6.png" alt="" />
-                    <div class="h5-a">
-                      <h5>Learn Marketing from Top Instructors.</h5>
-                      <a href="#icon"><i class="fa-regular fa-star"></i></a>
-                      <p>4.5</p>
-                    </div>
-                    <h5>30.5$</h5>
-                    <div class="number">
-                      <p>6 weeks</p>
-                      <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
-                    </div>
-                  </div>
+              </div>
+              <h6>30.5$</h6>
+              <div class="number">
+                <p>6 weeks</p>
+                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+              </div>
             </div>
-        </div>
+            <div class="course">
+              <img src="Imags/section2_img_2.png" alt="" />
+              <div class="h5-a">
+                <h5>Learn Marketing from Top Instructors.</h5>
+                <div class="star-num">
+                  <a href="#icon"><i class="fa-regular fa-star"></i></a>
+                  <p>4.5</p>
+                </div>
+              </div>
+              <h6>30.5$</h6>
+              <div class="number">
+                <p>6 weeks</p>
+                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+              </div>
+            </div>
+            <div class="course">
+              <img src="Imags/section2_img_3.png" alt="" />
+              <div class="h5-a">
+                <h5>Learn Marketing from Top Instructors.</h5>
+                <div class="star-num">
+                  <a href="#icon"><i class="fa-regular fa-star"></i></a>
+                  <p>4.5</p>
+                </div>
+              </div>
+              <h6>30.5$</h6>
+              <div class="number">
+                <p>6 weeks</p>
+                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+              </div>
+            </div>
+            <div class="course">
+              <img src="Imags/section2_img_4.png" alt="" />
+              <div class="h5-a">
+                <h5>Learn Marketing from Top Instructors.</h5>
+                <div class="star-num">
+                  <a href="#icon"><i class="fa-regular fa-star"></i></a>
+                  <p>4.5</p>
+                </div>
+              </div>
+              <h6>30.5$</h6>
+              <div class="number">
+                <p>6 weeks</p>
+                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+              </div>
+            </div>
+            <div class="course">
+              <img src="Imags/section2_img_5.png" alt="" />
+              <div class="h5-a">
+                <h5>Learn Marketing from Top Instructors.</h5>
+                <div class="star-num">
+                  <a href="#icon"><i class="fa-regular fa-star"></i></a>
+                  <p>4.5</p>
+                </div>
+              </div>
+              <h6>30.5$</h6>
+              <div class="number">
+                <p>6 weeks</p>
+                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+              </div>
+            </div>
+            <div class="course">
+              <img src="Imags/section2_img_6.png" alt="" />
+              <div class="h5-a">
+                <h5>Learn Marketing from Top Instructors.</h5>
+                <div class="star-num">
+                  <a href="#icon"><i class="fa-regular fa-star"></i></a>
+                  <p>4.5</p>
+                </div>
+              </div>
+              <h6>30.5$</h6>
+
+              <div class="number">
+                <p>6 weeks</p>
+                <p><img src="Icons/ci_group.svg" alt="" />1.5k Students</p>
+              </div>
+            </div>
+
+
+            
+          </div>
       </section>
 
       <!-- Abdumalik -->
-      <section id="Learn__section">
+      <section id="Learn__section ">
         <div class="container">
           <div class="Learn">
             <div class="Learn_top">
@@ -305,11 +387,11 @@
                 </button>
               </div>
             </div>
-            <div class="Learn_table">
+            <div class="Learn_table container">
               <div class="Learn_table_1">
                 <div class="Learn_img">
                   <img src="./Imags/Learn_1.png" alt="Learn" />
-                  <img src="./Icons/left.svg" alt="Left" />
+                  <img class="none" src="./Icons/left.svg" alt="Left" />
                 </div>
                 <div class="Learn_text">
                   <h5>All you need in Business Strategy</h5>
@@ -337,13 +419,10 @@
               <div class="Learn_table_1">
                 <div class="Learn_img">
                   <img src="./Imags/Learn_2.png" alt="Learn" />
-                  <img src="./Icons/left.svg" alt="Left" />
+                  <!-- <img src="./Icons/left.svg" alt="Left" /> -->
                 </div>
                 <div class="Learn_text">
-                  <h5>
-                    The amazing hack in Figma prototyping 4.5 6 weeks 1.5k
-                    Students 30.5$
-                  </h5>
+                  <h5>All you need in Business Strategy</h5>
                   <div class="Learn_text_icon">
                     <i
                       class="fa-sharp fa-regular fa-star"
@@ -367,14 +446,11 @@
               </div>
               <div class="Learn_table_1">
                 <div class="Learn_img">
-                  <img src="./Imags/Learn_3.png" alt="Learn" />
-                  <img src="./Icons/left.svg" alt="Left" />
+                  <img class="img_3" src="./Imags/Learn_3.png" alt="Learn" />
+                  <img class="none img_none" src="./Icons/right.svg" alt="Left" />
                 </div>
                 <div class="Learn_text">
-                  <h5>
-                    Introduction to basic game developement 4.5 6 weeks 1.5k
-                    Students 30.5$
-                  </h5>
+                  <h5>All you need in Business Strategy</h5>
                   <div class="Learn_text_icon">
                     <i
                       class="fa-sharp fa-regular fa-star"
@@ -408,11 +484,12 @@
             </div>
             <div class="Education_Table">
               <div class="Education_left">
-                <img src="./Imags/Education.png" alt="Education" />
+                <img class="edo" src="./Imags/Education.png" alt="Education" />
                 <div class="Education_div">
                   <img src="./Icons/Bag.svg" alt="Bag" />
                   <div class="Education_line">
-                    <h4>Job Opportunities</h4>
+                    <h3>Job</h3>
+                    <h4>Opportunities</h4>
                     <img src="./Icons/Line.svg" alt="Line" />
                   </div>
                 </div>
@@ -447,77 +524,111 @@
 
       <!-- Dildora -->
       <section id="Reviews__section">
-        <div class="container">
+        <div class="container r_box">
           <h3>Reviews</h3>
-          <div>
-            <h2>
-              What our
-              <span
-                >Students
+
+          <div class="r_boxx">
+            <div class="r_box1">
+              <h2>
+                What our
+                <span
+                  >Students
+                  <img
+                    src="./Icons/tag-chiziq-green.svg"
+                    alt="tag-chiziq-green"
+                    loading="lazy"
+                  /> </span
+                >say about us
+              </h2>
+
+              <div class="r_imgs">
                 <img
-                  src="./Icons/tag-chiziq-green.svg"
-                  alt="tag-chiziq-green"
+                  src="./Icons/chapga-strelka.svg"
+                  alt="chapga-strelka"
                   loading="lazy"
-                /> </span
-              >say about us
-            </h2>
-            <img
-              src="./Icons/chapga-strelka.svg"
-              alt="chapga-strelka"
-              loading="lazy"
-            />
-            <img
-              src="./Icons/ungga-strelka.svg"
-              alt="ungga-strelka"
-              loading="lazy"
-            />
-          </div>
-          <div>
-            <div>
-              <img src="./Imags/1-rasm.svg" alt="1-rasm.svg" loading="lazy" />
-              <h4>Mohh Jumah</h4>
-              <h5>Senior Developer</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Consectetur ac blandit nam massa massa elementum mollis lectus.
-                Sit ultricies nisl amet non, quis enim velit tempus. Interdum
-                duis imperdiet venenatis
-              </p>
+                />
+                <img
+                  src="./Icons/ungga-strelka.svg"
+                  alt="ungga-strelka"
+                  loading="lazy"
+                />
+              </div>
             </div>
-            <div>
-              <img src="./Imags/2-rasm.svg" alt="2-rasm.svg" loading="lazy" />
-              <h4>John Mark</h4>
-              <h5>Data Analyst</h5>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Consectetur ac blandit nam massa massa elementum mollis lectus.
-                Sit ultricies nisl amet non, quis enim velit tempus. Interdum
-                duis imperdiet venenatis
-              </p>
+
+            <div class="r_box2">
+              <div class="r_box2_1">
+                <div class="r_box2_1_1">
+                  <img
+                    src="./Imags/1-rasm.svg"
+                    alt="1-rasm.svg"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h4>Mohh Jumah</h4>
+                    <h5>Senior Developer</h5>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consectetur ac blandit nam massa massa
+                  <span
+                    >elementum mollis lectus. Sit ultricies nisl amet non, quis
+                    enim velit tempus. Interdum duis imperdiet venenatis</span
+                  >
+                </p>
+              </div>
+
+              <div class="r_box2_2">
+                <div class="r_box2_2_2">
+                  <img
+                    src="./Imags/2-rasm.svg"
+                    alt="2-rasm.svg"
+                    loading="lazy"
+                  />
+                  <div>
+                    <h4>John Mark</h4>
+                    <h5>Data Analyst</h5>
+                  </div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Consectetur ac blandit nam massa massa
+                  <span
+                    >elementum mollis lectus. Sit ultricies nisl amet non, quis
+                    enim velit tempus. Interdum duis imperdiet venenatis</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
+
       <section id="Meet__section">
-        <div class="container">
+        <div class="container m_box">
           <h3>Meet our instructors</h3>
-          <div>
-            <div>
-              <img src="./Imags/2.1-RASM.svg" alt="rasm-bor" loading="lazy" />
-              <h4>John Mark</h4>
-              <h5>Senior Developer</h5>
-              <p>“Education will be for you what you want it to be”</p>
+
+          <div class="m_imgs">
+            <div class="m_imgs_2">
+              <div class="m_imgs1">
+                <img src="./Imags/2.1-RASM.svg" alt="rasm-bor" loading="lazy" />
+                <h4>John Mark</h4>
+                <h5>Senior Developer</h5>
+                <p>“Education will be for you what you want it to be”</p>
+              </div>
+
+              <div class="m_imgs2">
+                <img src="./Imags/2.2-RASM.svg" alt="rasm-bor" loading="lazy" />
+                <h4>Lora Shrof</h4>
+                <h5>Marketing Lead</h5>
+                <p>
+                  “Knowledge has to be improved, challenged, and increased
+                  constantly, or it vanishes”
+                </p>
+              </div>
             </div>
-            <div>
-              <img src="./Imags/2.2-RASM.svg" alt="rasm-bor" loading="lazy" />
-              <h4>Lora Shrof</h4>
-              <h5>Marketing Lead</h5>
-              <p>
-                “Knowledge has to be improved, challenged, and increased
-                constantly, or it vanishes”
-              </p>
-            </div>
-            <div>
+
+            <div class="m_imgs3">
               <img src="./Imags/2.3-RASM.svg" alt="rasm-bor" loading="lazy" />
               <h4>Zeng Chin</h4>
               <h5>Data Analist at Meta</h5>
@@ -532,7 +643,7 @@
 
       <!-- Mahfuza -->
       <section id="Contact__section">
-        <div class=" contact container">
+        <div class="contact container">
           <div class="Contact_img">
             <img
               src="./Imags/image_Contact-img.png"
@@ -569,10 +680,18 @@
               expertise.
             </p>
             <div class="footer_icons">
-              <a href="#Home"><i class="fa-brands fa-facebook" style="color:#4dac2a"></i></a>
-              <a href="#home"><i class="fa-brands fa-twitter" style="color:#4dac2a"></i></a>
-              <a href="#home"><i class="fa-brands fa-instagram" style="color:#4dac2a"></i></a>
-              <a href="#home"><i class="fa-brands fa-linkedin" style="color:#4dac2a"></i></a>
+              <a href="#Home"
+                ><i class="fa-brands fa-facebook" style="color: #4dac2a"></i
+              ></a>
+              <a href="#home"
+                ><i class="fa-brands fa-twitter" style="color: #4dac2a"></i
+              ></a>
+              <a href="#home"
+                ><i class="fa-brands fa-instagram" style="color: #4dac2a"></i
+              ></a>
+              <a href="#home"
+                ><i class="fa-brands fa-linkedin" style="color: #4dac2a"></i
+              ></a>
             </div>
           </div>
           <div class="footer_links">
@@ -616,6 +735,7 @@
       </div>
     </footer>
     <!-- /Footer -->
+    <script src="js.js"></script> 
 
     <!-- ====Figma finish==== -->
   </body>

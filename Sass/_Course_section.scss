@@ -1,18 +1,218 @@
-._Course_section {
-  h3 {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: normal;
+#Course__section {
+  display: none;
+}
+#Course__section_lg {
+  @keyframes example {
+    100% {
+      left: 0px;
+    }
+    0% {
+      left: 0px;
+    }
   }
-  p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: normal;
+  .cartegories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 74px 0 24px;
+    h3 {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: normal;
+      max-width: 225px;
+    }
+    p {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
-  .list{
-    
+  .list {
+    overflow-x: hidden;
     a {
-        display: none;
+      display: none;
+    }
+    .text-img {
+      position: relative;
+      animation-name: example;
+      animation-duration: 3s;
+      animation-fill-mode: backwards;
+      display: flex;
+      gap: 16px;
+      width: 100%;
+      .categorie {
+        position: relative;
+        img {
+          width: 116px;
+          height: 133px;
+          border-radius: 5px;
+        }
+        p {
+          font-size: 16px;
+          font-weight: 600;
+          line-height: normal;
+          position: absolute;
+          top: 40%;
+          color: $color-2;
+        }
+        .p1 {
+          padding: 0 18px;
+        }
+        .p2 {
+          padding: 0 30px;
+        }
+        .p3 {
+          padding: 0 5px;
+        }
+        .p4 {
+          padding: 0 13px;
+        }
+        .p5 {
+          padding: 0 24px;
+        }
+        .p6 {
+          padding: 0 12px;
+        }
+        .p7 {
+          padding: 0 8px;
+        }
+      }
     }
   }
 }
+@media (min-width: 768px) {
+  // #Course__section {
+  //   display: none;
+  // }
+  #Course__section_lg {
+    // @keyframes example {
+    //   100% {
+    //     left: 0px;
+    //   }
+    //   0% {
+    //     left: 0px;
+    //   }
+    // }
+    // display: block;
+    .cartegories {
+      h3 {
+        font-size: 20px;
+        max-width: 300px;
+      }
+      p {
+        font-size: 18px;
+      }
+    }
+    .list {
+      .text-img {
+        // position: relative;
+        // animation-name: example;
+        // animation-duration: 3s;
+        // animation-fill-mode: backwards;
+        // display: flex;
+        // gap: 18px;
+        // width: 100%;
+        .categorie {
+          img {
+            width: 160px;
+            height: 180px;
+          }
+          p {
+            font-size: 19px;
+          }
+          .p1 {
+            padding: 0 32px;
+          }
+          .p2 {
+            padding: 0 42px;
+          }
+          .p3 {
+            padding: 0 15px;
+          }
+          .p4 {
+            padding: 0 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  #Course__section_lg {
+    display: none;
+  }
+  #Course__section {
+    display: block;
+    .cartegories {
+      margin: 64px 0;
+      display: flex;
+      align-items: center;
+      gap: 480px;
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: normal;
+        max-width: 754px;
+      }
+      p {
+        font-size: 24px;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .slider {
+      width: 100%;
+      position: relative;
+      overflow: hidden;
+      .slides {
+        display: flex;
+        gap: 32px;
+        transition: transform 0.5s ease-in-out;
+        .slide {
+          position: relative;
+          img {
+            width: 291px;
+            height: 432px;
+          }
+          p {
+            font-size: 32px;
+            font-weight: 600;
+            line-height: normal;
+            bottom: 20px;
+            left: 25px;
+            color: $color-2;
+            position: absolute;
+          }
+        }
+      }
+      .prev,
+      .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        padding: 10px;
+        cursor: pointer;
+        border-radius: 100px;
+        background: #fff;
+        display: block;
+        color: $color-1;
+        font-size: 30px;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .prev {
+        left: 15px;
+      }
+
+      .next {
+        left: 1185px;
+      }
+    }
+  }
+}
+
