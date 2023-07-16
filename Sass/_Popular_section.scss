@@ -2,7 +2,7 @@
   display: none;
 }
 
-.Popular__section2 {
+#Popular__section_lg {
   .popular {
     display: flex;
     align-items: center;
@@ -56,23 +56,22 @@
           text-align: center;
           left: 150px;
           bottom: 22px;
-          
-        
-        a {
-          i {
+
+          a {
+            i {
+              font-size: 8px;
+              color: $color-1;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          p {
             font-size: 8px;
-            color: $color-1;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-weight: 400;
           }
         }
-
-        p {
-          font-size: 8px;
-          font-weight: 400;
-        }
-      }
       }
       h6 {
         color: $color-1;
@@ -100,109 +99,157 @@
             align-items: center;
             justify-content: center;
           }
-          
+        }
+      }
+    }
+  }
+}
+@media (min-width: 768px) {
+  // #Popular__section {
+  //   display: none;
+  // }
+  #Popular__section_lg {
+    // display: block;
+    .popular {
+      h3 {
+        font-size: 28px;
+        font-weight: 600;
+      }
+    }
+    .courses {
+      .course {
+        .h5-a {
+          position: initial;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h5 {
+            font-size: 18px;
+            max-width: 200px;
+          }
+          .star-num {
+            position: initial;
+            a {
+              i {
+                font-size: 15px;
+              }
+            }
+            p {
+              font-size: 15px;
+            }
+          }
+        }
+        h6 {
+          font-size: 20px;
+        }
+        .number {
+          p {
+            font-size: 16px;
+            img {
+              width: 16px;
+              height: 16px;
+            }
+          }
         }
       }
     }
   }
 }
 
-  @media screen and (min-width: 1440px) {
-    .Popular__section2 {
-      display: none;
-    }
-    #Popular__section {
-      display: block;
-      .popular {
-        padding-top: 98px;
+@media (min-width: 1440px) {
+  #Popular__section_lg {
+    display: none;
+  }
+  #Popular__section {
+    display: block;
+    .popular {
+      padding-top: 98px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h3 {
+        font-size: 32px;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      button {
+        padding: 8px 16px;
+        gap: 10px;
+        border-radius: 50px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: normal;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        h3 {
-          font-size: 32px;
-          font-weight: 600;
-          line-height: normal;
-          text-transform: capitalize;
-        }
-        button {
-          padding: 8px 16px;
-          gap: 10px;
-          border-radius: 50px;
-          font-size: 18px;
-          font-weight: 400;
-          line-height: normal;
-          display: flex;
-          i {
-            color: $color-2;
-          }
+        i {
+          color: $color-2;
         }
       }
-      .courses {
-        margin-top: 64px;
-        display: grid;
-        gap: 32px;
-        grid-template-columns: repeat(3, 1fr);
-        .course {
-          border-radius: 10px;
-          box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+    }
+    .courses {
+      margin-top: 64px;
+      display: grid;
+      gap: 32px;
+      grid-template-columns: repeat(3, 1fr);
+      .course {
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
 
-          img {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            width: 100%;
+        img {
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          width: 100%;
+        }
+        .h5-a {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 24px 24px 42px 24px;
+          h5 {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: normal;
+            max-width: 282px;
+            text-transform: capitalize;
           }
-          .h5-a {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 24px 24px 42px 24px;
-            h5 {
-              font-size: 24px;
-              font-weight: 500;
-              line-height: normal;
-              max-width: 282px;
-              text-transform: capitalize;
-            }
-            a {
-              i {
-                font-size: 18px;
-                color: $color-1;
-              }
-            }
-            p {
-              font-size: 16px;
-              font-weight: 400;
-              line-height: normal;
-            }
-          }
-          .number {
-            padding: 0 24px 28px 24px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            h5 {
+          a {
+            i {
+              font-size: 18px;
               color: $color-1;
-              font-size: 24px;
-              font-weight: 600;
-              line-height: normal;
             }
-            p {
-              font-size: 16px;
-              font-weight: 500;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+        .number {
+          padding: 0 24px 28px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          h5 {
+            color: $color-1;
+            font-size: 24px;
+            font-weight: 600;
+            line-height: normal;
+          }
+          p {
+            font-size: 16px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            img {
               display: flex;
               align-items: center;
-              img {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 16px;
-                height: 16px;
-              }
+              justify-content: center;
+              width: 16px;
+              height: 16px;
             }
           }
         }
       }
     }
   }
-
-// }
+}
