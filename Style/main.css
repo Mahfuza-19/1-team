@@ -172,8 +172,8 @@ nav {
     border-radius: 5px;
   }
   .oq_button button {
-    background-color: #FFF;
-    color: #09B451;
+    background-color: #fff;
+    color: #09b451;
     padding: 8px 18px;
     font-size: 16px;
     font-weight: 600;
@@ -315,6 +315,7 @@ nav {
   }
   .h_down {
     flex-wrap: nowrap;
+    display: flex;
     justify-content: space-between;
     row-gap: 0;
     column-gap: 0;
