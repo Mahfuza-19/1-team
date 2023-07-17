@@ -11,16 +11,13 @@ $color-7: #ddffff;
 $font-1: "Open Sans", sans-serif;
 $font-2: "Poppins", sans-serif;
 // Unversal code
-body {
-  overflow-x: hidden;
-}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: $font-1;
 }
-
 a {
   text-decoration: none;
 }
@@ -28,8 +25,13 @@ a {
 li {
   list-style: none;
 }
-img {
-  // max-width: 100%;
+
+button{
+    background-color:$color-1 ;
+    border: none;
+    color:$color-2;
+    font-weight: 600;
+    font-size: 16px;
 }
 
 button {
@@ -48,12 +50,7 @@ button {
   }
 }
 
-@media (min-width:768px){
-    .container{
-        max-width: 697px;
-        margin: 0 auto;
-    }
-}
+
 @media  (min-width:1440px) {
     .container{
         max-width: 1280px;

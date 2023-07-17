@@ -1,8 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-body {
-  overflow-x: hidden;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -21,18 +17,20 @@ li {
 button {
   background-color: #09b451;
   border: none;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+button {
+  background-color: #09b451;
+  border: none;
   cursor: pointer;
   color: #fff;
   font-weight: 600;
   font-size: 16px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    max-width: 90%;
-    margin: 0 auto;
-  }
-}
 @media (min-width: 768px) {
   .container {
     max-width: 697px;
@@ -199,6 +197,7 @@ nav {
     justify-content: space-between;
     gap: 0;
     background-position: right;
+    padding-left: 60px;
   }
   .h_left h1 {
     font-size: 60px;
@@ -1877,7 +1876,6 @@ nav {
   display: flex;
   gap: 32px;
   align-items: center;
-  justify-content: space-between;
 }
 #Contact__section .Contact_text .Contact_btns button {
   border-radius: 5px;
@@ -1899,45 +1897,62 @@ nav {
 
 @media screen and (min-width: 768px) {
   #Contact__section {
-    background-image: url(../Imags/CTA_Contact-bg.png);
-    background-size: cover;
-    padding: 0px 0 76px 0;
-    margin-top: 30px;
+    padding: 70px 0 50px 0;
+  }
+  #Contact__section .container {
+    width: 90%;
+    margin: 0 auto;
   }
   #Contact__section .contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 109px;
+    gap: 80px;
   }
   #Contact__section .Contact_img {
     display: flex;
+  }
+  #Contact__section .Contact_img img {
     position: relative;
-    bottom: 50px;
+    bottom: 100px;
+    width: 350px;
+    height: 350px;
   }
   #Contact__section .Contact_text {
     text-align: start;
+    margin-top: -120px;
   }
   #Contact__section .Contact_text h2 {
-    font-size: 42px;
-    text-align: left;
-    line-height: normal;
+    color: #fff;
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 38px;
+    margin-bottom: 18px;
   }
   #Contact__section .Contact_text p {
+    color: #fff;
     text-align: start;
-    font-size: 24px;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
-    margin-bottom: 89px;
+    margin-bottom: 30px;
   }
   #Contact__section .Contact_text .Contact_btns {
     display: flex;
-    gap: 32px;
-    align-items: start;
-    justify-content: left;
+    gap: 20px;
+    align-items: center;
   }
   #Contact__section .Contact_text .Contact_btns button {
     border-radius: 5px;
-    padding: 20px 42px;
+    padding: 15px 20px;
+    font-weight: 500;
+    font-size: 14px;
   }
   #Contact__section .Contact_text .Contact_btns .btn-white {
     background-color: #fff;
@@ -1953,47 +1968,64 @@ nav {
     color: #fff;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   #Contact__section {
-    background-image: url(../Imags/CTA_Contact-bg.png);
-    background-size: cover;
-    padding: 0px 0 76px 0;
-    margin-top: 30px;
+    padding: 70px 0 76px 0;
+  }
+  #Contact__section .container {
+    width: 1280px;
+    margin: 0 auto;
   }
   #Contact__section .contact {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 109px;
+    gap: 80px;
   }
   #Contact__section .Contact_img {
     display: flex;
+  }
+  #Contact__section .Contact_img img {
     position: relative;
-    bottom: 50px;
+    bottom: 120px;
+    width: 513px;
+    height: 513px;
   }
   #Contact__section .Contact_text {
     text-align: start;
+    margin-top: -120px;
   }
   #Contact__section .Contact_text h2 {
+    color: #fff;
+    text-align: start;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
     font-size: 42px;
-    text-align: left;
+    font-weight: 800;
+    margin-bottom: 24px;
     line-height: normal;
   }
   #Contact__section .Contact_text p {
+    color: #fff;
     text-align: start;
+    font-family: "Open Sans", sans-serif;
+    text-transform: capitalize;
     font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
     line-height: normal;
-    margin-bottom: 89px;
+    margin-bottom: 90px;
   }
   #Contact__section .Contact_text .Contact_btns {
     display: flex;
     gap: 32px;
-    align-items: start;
-    justify-content: left;
+    align-items: center;
   }
   #Contact__section .Contact_text .Contact_btns button {
     border-radius: 5px;
-    padding: 20px 42px;
+    padding: 20px 40px;
+    font-weight: 500;
+    font-size: 16px;
   }
   #Contact__section .Contact_text .Contact_btns .btn-white {
     background-color: #fff;
@@ -2017,6 +2049,7 @@ footer {
 footer .footer {
   display: flex;
   flex-direction: column-reverse;
+  justify-content: space-between;
 }
 footer .footer .Footer_log {
   text-align: left;
@@ -2030,8 +2063,13 @@ footer .footer .Footer_log h3 {
   line-height: normal;
   margin-bottom: 6px;
 }
+footer .footer .Footer_log form {
+  max-width: 100%;
+  display: flex;
+}
 footer .footer .Footer_log form input {
-  padding: 15px 244px 11px 13px;
+  width: 100%;
+  padding: 15px 15px 11px 13px;
   background: #fff;
   color: #3bd27b;
   font-family: "Poppins", sans-serif;
@@ -2039,14 +2077,11 @@ footer .footer .Footer_log form input {
   font-weight: 500;
   line-height: normal;
   border: none;
-  border-radius: 7px;
+  border-radius: 7px 0 0 7pxpx;
 }
 footer .footer .Footer_log form button {
-  position: relative;
-  margin-left: 280px;
-  padding: 9px 15px 10px 14px;
+  padding: 15px 15px 11px 14px;
   border-radius: 0 7px 7px 0;
-  bottom: 40.5px;
 }
 footer .footer .Footer_log form button:hover {
   cursor: pointer;
@@ -2059,6 +2094,8 @@ footer .footer .Footer_menu .footer_links {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 footer .footer .Footer_menu .footer_links .f-a,
 footer .footer .Footer_menu .footer_links .f-b {
@@ -2106,9 +2143,13 @@ footer .footer .Footer_menu .footer_icons a i {
     color: #fff;
     padding: 123px 0 52px 0;
   }
+  footer .container {
+    width: 90%;
+  }
   footer .footer {
     display: flex;
     flex-direction: column;
+    gap: 78px;
   }
   footer .footer .Footer_log {
     text-align: center;
@@ -2127,13 +2168,10 @@ footer .footer .Footer_menu .footer_icons a i {
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
-    border-radius: 7px;
+    border-radius: 7px 0 0 7px;
     margin-left: 100px;
   }
   footer .footer .Footer_log form button {
-    position: relative;
-    margin-left: -100px;
-    bottom: 0;
     padding: 20px 18px;
     border-radius: 0 7px 7px 0;
   }
@@ -2147,31 +2185,18 @@ footer .footer .Footer_menu .footer_icons a i {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    gap: 80px;
     margin-bottom: 111px;
   }
   footer .footer .Footer_menu .footer_links {
     display: flex;
-    gap: 74px;
+    gap: 65px;
     margin-bottom: 30px;
+    flex-wrap: nowrap;
   }
-  footer .footer .Footer_menu .footer_links .f-a,
-  footer .footer .Footer_menu .footer_links .f-b {
-    display: inline-block;
-  }
-  footer .footer .Footer_menu .footer_links .f-a li,
-  footer .footer .Footer_menu .footer_links .f-b li {
-    margin-bottom: 8px;
-  }
-  footer .footer .Footer_menu .footer_links .f-a li a,
-  footer .footer .Footer_menu .footer_links .f-b li a {
-    color: #fff;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 25px;
-    text-transform: capitalize;
+  footer .footer .Footer_menu .footer_links .f-b,
+  footer .footer .Footer_menu .footer_links .f-a {
+    display: none;
   }
   footer .footer .Footer_menu .footer_links ol li {
     margin-bottom: 8px;
@@ -2228,6 +2253,7 @@ footer .footer .Footer_menu .footer_icons a i {
   footer .footer {
     display: flex;
     flex-direction: column;
+    gap: 91px;
   }
   footer .footer .Footer_log {
     text-align: center;
@@ -2241,25 +2267,28 @@ footer .footer .Footer_menu .footer_icons a i {
     text-align: center;
     margin-left: 70px;
   }
+  footer .footer .Footer_log form {
+    max-width: 55%;
+    display: flex;
+    margin: 0 auto;
+  }
   footer .footer .Footer_log form input {
-    padding: 19px 291px 18px 18px;
-    font-size: 16px;
-    font-weight: 600;
+    width: 100%;
+    padding: 20px 15px 11px 17px;
+    background: #fff;
+    color: #3bd27b;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     line-height: normal;
-    border-radius: 7px;
-    margin-left: 100px;
+    border: none;
+    border-radius: 7px 0 0 7px;
   }
   footer .footer .Footer_log form button {
-    margin-left: -100px;
-    position: relative;
-    bottom: 0;
-    padding: 20px 18px;
+    padding: 15px 15px 11px 14px;
     border-radius: 0 7px 7px 0;
   }
   footer .footer .Footer_log form button:hover {
-    background-color: #fff;
-    color: #09b451;
-    border: 1px solid #09b451;
     cursor: pointer;
   }
   footer .footer .Footer_menu {
