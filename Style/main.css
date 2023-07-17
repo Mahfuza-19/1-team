@@ -14,18 +14,10 @@ li {
   list-style: none;
 }
 
-button {
-  background-color: #09b451;
-  border: none;
-  color: #fff;
-  font-weight: 600;
-  font-size: 16px;
+.container {
+  max-width: 330px;
+  margin: 0 auto;
 }
-
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 90%;
 
 button {
   background-color: #09b451;
@@ -36,6 +28,15 @@ button {
   font-size: 16px;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+}
+.education_section {
+  overflow-x: hidden;
+}
 
 @media (min-width: 1440px) {
   .container {
@@ -43,11 +44,6 @@ button {
     margin: 0 auto;
   }
 }
-.education_section {
-
-  overflow-x: hidden;
-}
-
 nav {
   padding: 28px 0;
   margin-bottom: 10px;
@@ -137,24 +133,6 @@ nav {
   font-size: 14.318px;
   font-weight: 400;
 }
-
-.info2 {
-  display: flex;
-  gap: 10.74px;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  padding: 9px 15px;
-  width: 210px;
-  height: 54px;
-  background: #DFF;
-  border-radius: 4.47px;
-}
-.info2 p {
-  font-size: 14.318px;
-  font-weight: 400;
-}
-
 
 @media screen and (min-width: 768px) {
   .nav_menu {
@@ -269,7 +247,6 @@ nav {
   #hero .hhero {
     background: none;
   }
-
   .h_tepa {
     display: flex;
     justify-content: space-between;
@@ -281,7 +258,6 @@ nav {
     align-items: center;
     padding-left: 60px;
   }
-
   .h_left h1 {
     font-size: 60px;
     max-width: 571px;
@@ -831,7 +807,6 @@ nav {
     display: grid;
     margin-top: 98px;
     margin-bottom: 32px;
-
   }
   .Learn_section .Learn h2 {
     max-width: 506px;
@@ -844,7 +819,6 @@ nav {
     line-height: normal;
     text-transform: capitalize;
     margin-bottom: 98px;
-
   }
   .Learn_section .Learn .three_cards {
     display: flex;
@@ -1910,10 +1884,6 @@ nav {
   #Contact__section {
     padding: 70px 0 50px 0;
   }
-  #Contact__section .container {
-    width: 90%;
-    margin: 0 auto;
-  }
   #Contact__section .contact {
     display: flex;
     align-items: center;
@@ -1979,13 +1949,9 @@ nav {
     color: #fff;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
   #Contact__section {
     padding: 70px 0 76px 0;
-  }
-  #Contact__section .container {
-    width: 1280px;
-    margin: 0 auto;
   }
   #Contact__section .contact {
     display: flex;
@@ -2057,6 +2023,10 @@ footer {
   color: #fff;
   padding: 63px 0;
 }
+footer .container {
+  max-width: 410px;
+  margin: 0 auto;
+}
 footer .footer {
   display: flex;
   flex-direction: column-reverse;
@@ -2079,7 +2049,8 @@ footer .footer .Footer_log form {
   display: flex;
 }
 footer .footer .Footer_log form input {
-  padding: 15px 244px 11px 13px;
+  width: 100%;
+  padding: 15px 15px 11px 13px;
   background: #fff;
   color: #3bd27b;
   font-family: "Poppins", sans-serif;
@@ -2153,9 +2124,6 @@ footer .footer .Footer_menu .footer_icons a i {
     color: #fff;
     padding: 123px 0 52px 0;
   }
-  footer .container {
-    width: 90%;
-  }
   footer .footer {
     display: flex;
     flex-direction: column;
@@ -2173,8 +2141,13 @@ footer .footer .Footer_menu .footer_icons a i {
     text-align: center;
     margin-left: 70px;
   }
+  footer .footer .Footer_log form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
   footer .footer .Footer_log form input {
-    padding: 19px 291px 18px 18px;
+    width: 100%;
+    padding: 19px 19px 18px 18px;
     font-size: 16px;
     font-weight: 600;
     line-height: normal;
