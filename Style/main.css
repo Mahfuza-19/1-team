@@ -39,7 +39,7 @@ button {
     margin: 0 auto;
   }
 }
-body {
+.education_section {
   overflow-x: hidden;
 }
 
@@ -865,6 +865,7 @@ nav {
   .Learn_section .Learn {
     display: grid;
     margin-top: 98px;
+    margin-bottom: 32px;
   }
   .Learn_section .Learn h2 {
     max-width: 506px;
@@ -876,7 +877,7 @@ nav {
     margin-bottom: 32px;
     line-height: normal;
     text-transform: capitalize;
-    padding-top: 98px;
+    margin-bottom: 98px;
   }
   .Learn_section .Learn .three_cards {
     display: flex;
@@ -995,6 +996,9 @@ nav {
   margin-bottom: 32px;
 }
 .Education .Education_Table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 0 auto;
 }
 .Education .Education_Table .Education_left {
@@ -1068,6 +1072,7 @@ nav {
   .Education .Education_Table {
     display: flex;
     gap: 118px;
+    flex-direction: row;
   }
   .Education .Education_Table .Education_left {
     position: relative;

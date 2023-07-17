@@ -128,6 +128,7 @@
     .Learn {
       display: grid;
       margin-top: 98px;
+      margin-bottom: 32px;
       h2 {
         max-width: 506px;
         color: var(--gray-1, #333);
@@ -138,7 +139,7 @@
         margin-bottom: 32px;
         line-height: normal;
         text-transform: capitalize;
-        padding-top: 98px;
+        margin-bottom: 98px;
       }
       .three_cards {
         display: flex;
