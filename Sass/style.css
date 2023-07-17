@@ -114,7 +114,8 @@ nav {
   display: flex;
   flex-wrap: wrap;
   row-gap: 24px;
-  column-gap: 16px;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
 }
 
 .info {
@@ -319,7 +320,8 @@ nav {
     display: flex;
     justify-content: space-between;
     row-gap: 0;
-    column-gap: 0;
+    -moz-column-gap: 0;
+         column-gap: 0;
   }
   .info2 {
     margin: 0;
@@ -2147,6 +2149,4 @@ footer .footer .Footer_menu .footer_icons a i {
   footer .footer .Footer_menu .footer_icons a i {
     font-size: 32px;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=style.css.map */
