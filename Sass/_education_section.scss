@@ -11,7 +11,7 @@
   .Education_Table {
     // display: flex;
     // // flex-direction: column;
-    // align-items: center;
+    align-items: center;
     margin: 0 auto;
     .Education_left {
       position: relative;
@@ -82,7 +82,6 @@
     }
   }
 }
-
 @media screen and (min-width: 760px) {
   .Education {
     .Education_top {
@@ -97,13 +96,9 @@
     .Education_Table {
       display: flex;
       gap: 118px;
+      flex-direction: row;
       .Education_left {
         position: relative;
-        // .edo {
-        //   img {
-        //     // font-size: 392px;
-        //   }
-        // }
         .Education_div {
           border-radius: 6.022px 6.022px 15.055px 6.022px;
           background: #fff;
@@ -114,7 +109,6 @@
           top: 200px;
           left: 350px;
           padding: 12px 9px 26px;
-
           .Education_line {
             position: relative;
             margin-top: 8px;
@@ -183,11 +177,6 @@
       gap: 118px;
       .Education_left {
         position: relative;
-        // .edo {
-        //   img {
-        //     // font-size: 392px;
-        //   }
-        // }
         .Education_div {
           border-radius: 6.022px 6.022px 15.055px 6.022px;
           background: #fff;
@@ -198,7 +187,6 @@
           top: 200px;
           left: 350px;
           padding: 12px 9px 26px;
-
           .Education_line {
             position: relative;
             margin-top: 8px;
@@ -213,7 +201,6 @@
               font-weight: 600;
               color: $color-3;
               margin-top: 5px;
-              // margin-bottom: 22px;
             }
             img {
               position: absolute;
