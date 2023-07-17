@@ -3,10 +3,10 @@ footer {
   background-color: $color-3;
   color: $color-2;
   padding: 63px 0;
-  // .container{
-  //   max-width: 410px;
-  //   margin:0 auto;
-  // }
+  .container{
+    max-width: 410px;
+    margin:0 auto;
+  }
   .footer {
     display: flex;
     flex-direction: column-reverse;
@@ -108,9 +108,9 @@ footer {
     background-color: $color-3;
     color: $color-2;
     padding: 123px 0 52px 0;
-    .container {
-      width: 90%;
-    }
+    // .container {
+    //   max-width: 90%;
+    // }
     .footer {
       display: flex;
       flex-direction: column;
@@ -127,8 +127,11 @@ footer {
           margin-left: 70px;
         }
         form {
+          max-width: 100%;
+          margin: 0 auto;
           input {
-            padding: 19px 291px 18px 18px;
+            width: 100%;
+            padding: 19px 19px 18px 18px;
             font-size: 16px;
             font-weight: 600;
             line-height: normal;

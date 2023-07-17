@@ -11,7 +11,7 @@
   background-size: cover;
   padding: 87px 0 70px 0;
   // .container {
-  //  max-width: 380px;
+  //  max-width: 360px;
   //   margin: 0 auto;
   // }
   .Contact_img {
@@ -69,10 +69,10 @@
   }
   #Contact__section {
     padding: 70px 0 50px 0;
-    .container {
-      width: 90%;
-      margin: 0 auto;
-    }
+    // .container {
+    //   max-width: 90%;
+    //   margin: 0 auto;
+    // }
     .contact {
       display: flex;
       align-items: center;
@@ -135,7 +135,7 @@
     }
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
   @mixin contact {
     color: $color-2;
     text-align: start;
@@ -144,10 +144,10 @@
   }
   #Contact__section {
     padding: 70px 0 76px 0;
-    .container {
-      width: 1280px;
-      margin: 0 auto;
-    }
+    // .container {
+    //  max-width: 1280px;
+    //   margin: 0 auto;
+    // }
     .contact {
       display: flex;
       align-items: center;
