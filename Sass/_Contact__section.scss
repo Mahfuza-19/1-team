@@ -1,5 +1,5 @@
 // Contact__section style
-@mixin contact{
+@mixin contact {
   color: $color-2;
   text-align: center;
   font-family: $font-1;
@@ -38,7 +38,7 @@
       display: flex;
       gap: 32px;
       align-items: center;
-      justify-content:space-between;
+      // justify-content: space-between;
       button {
         border-radius: 5px;
         padding: 20px 42px;
@@ -47,137 +47,166 @@
         background-color: $color-2;
         color: $color-1;
       }
-      button:hover{
+      button:hover {
         background-color: $color-2;
         color: $color-1;
         cursor: pointer;
       }
-      .btn-white:hover{
+      .btn-white:hover {
         background-color: $color-1;
         color: $color-2;
-
       }
     }
   }
 }
 
-@media screen and (min-width:768px){
+@media screen and (min-width: 768px) {
+  @mixin contact {
+    color: $color-2;
+    text-align: start;
+    font-family: $font-1;
+    text-transform: capitalize;
+  }
   #Contact__section {
-    background-image: url(../Imags/CTA_Contact-bg.png);
-    background-size: cover;
-    padding: 0px 0 76px 0;
-    margin-top: 30px;
-    // .container {
-    //  max-width: 90%;
-    // }
-    .contact{
+    padding: 70px 0 50px 0;
+    .container {
+      width: 90%;
+      margin: 0 auto;
+    }
+    .contact {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 109px;
+      gap: 80px;
     }
     .Contact_img {
       display: flex;
-      position: relative;
-      bottom: 50px;
+    
+      img {
+        position: relative;
+        bottom: 100px;
+        width: 350px;
+        height: 350px;
+      }
     }
     .Contact_text {
       text-align: start;
+      margin-top: -120px;
       h2 {
-        font-size: 42px;
-        text-align: left;
-        line-height: normal;
+        @include contact;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 38px;
+        margin-bottom: 18px;
       }
       p {
-        text-align: start;
-        font-size: 24px;
+        @include contact;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
         line-height: normal;
-        margin-bottom: 89px;
+        margin-bottom: 30px;
       }
       .Contact_btns {
         display: flex;
-        gap: 32px;
-        align-items: start;
-      justify-content:left;
+        gap: 20px;
+        align-items: center;
+        // justify-content: space-between;
         button {
           border-radius: 5px;
-          padding: 20px 42px;
+          padding: 15px 20px;
+          font-weight: 500;
+          font-size: 14px;
         }
         .btn-white {
           background-color: $color-2;
           color: $color-1;
         }
-        button:hover{
+        button:hover {
           background-color: $color-2;
           color: $color-1;
           cursor: pointer;
         }
-        .btn-white:hover{
+        .btn-white:hover {
           background-color: $color-1;
           color: $color-2;
-  
         }
       }
     }
   }
 }
-@media screen and (min-width:1440px){
+@media screen and (min-width: 1300px) {
+  @mixin contact {
+    color: $color-2;
+    text-align: start;
+    font-family: $font-1;
+    text-transform: capitalize;
+  }
   #Contact__section {
-    background-image: url(../Imags/CTA_Contact-bg.png);
-    background-size: cover;
-    padding: 0px 0 76px 0;
-    margin-top: 30px;
-    // .container {
-    //  max-width: 1240px;
-    // }
-    .contact{
+    padding: 70px 0 76px 0;
+    .container {
+      width: 1280px;
+      margin: 0 auto;
+    }
+    .contact {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 109px;
+      gap: 80px;
     }
     .Contact_img {
       display: flex;
-      position: relative;
-      bottom: 50px;
+    
+      img {
+        position: relative;
+        bottom: 120px;
+        width: 513px;
+        height: 513px;
+      }
     }
     .Contact_text {
       text-align: start;
+      margin-top: -120px;
       h2 {
+        @include contact;
         font-size: 42px;
-        text-align: left;
+        font-weight: 800;
+        margin-bottom: 24px;
         line-height: normal;
       }
       p {
-        text-align: start;
+        @include contact;
         font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
         line-height: normal;
-        margin-bottom: 89px;
+        margin-bottom: 90px;
       }
       .Contact_btns {
         display: flex;
         gap: 32px;
-        align-items: start;
-      justify-content:left;
+        align-items: center;
         button {
           border-radius: 5px;
-          padding: 20px 42px;
+          padding: 20px 40px;
+          font-weight: 500;
+          font-size: 16px;
         }
         .btn-white {
           background-color: $color-2;
           color: $color-1;
         }
-        button:hover{
+        button:hover {
           background-color: $color-2;
           color: $color-1;
           cursor: pointer;
         }
-        .btn-white:hover{
+        .btn-white:hover {
           background-color: $color-1;
           color: $color-2;
-  
         }
       }
     }
   }
 }
+
