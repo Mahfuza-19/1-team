@@ -10,16 +10,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 1rem;
 
     .m_imgs_2 {
       display: flex;
       justify-content: space-between;
+      gap: 1rem;
       .m_imgs1 {
         display: flex;
         flex-direction: column;
         align-items: center;
         width: 182px;
         height: 173.146px;
+        box-shadow: inset 0 0em 0em rgba(0, 0, 0, 0.1),
+          0 0 0 0.1px rgb(255, 255, 255), 0em 0em 0.1em rgba(0, 0, 0, 0.3);
 
         img {
           width: 53.124px;
@@ -65,6 +69,8 @@
         align-items: center;
         width: 182px;
         height: 173.146px;
+        box-shadow: inset 0 0em 0em rgba(0, 0, 0, 0.1),
+          0 0 0 0.1px rgb(255, 255, 255), 0em 0em 0.1em rgba(0, 0, 0, 0.3);
 
         img {
           width: 53.124px;
@@ -111,6 +117,8 @@
       align-items: center;
       width: 182px;
       height: 173.146px;
+      // box-shadow: inset 0 0em 0em rgba(0, 0, 0, 0.1),
+      //   0 0 0 0.1px rgb(255, 255, 255), 0em 0em 0.1em rgba(0, 0, 0, 0.3);
 
       img {
         width: 53.124px;
@@ -152,13 +160,144 @@
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 768px) {
+  container {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+
+  .m_box {
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: normal;
+      padding-bottom: 54px;
+      text-align: center;
+    }
+
+    .m_imgs {
+      display: flex;
+      flex-direction: row;
+      gap: 26px;
+      // justify-content: center;
+
+      .m_imgs_2 {
+        display: flex;
+        gap: 26px;
+
+        .m_imgs1 {
+          display: flex;
+          width: 200.49px;
+          height: 290.494px;
+
+          img {
+            width: 100.981px;
+            height: 100.981px;
+          }
+
+          h4 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 106.5%;
+          }
+
+          h5 {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 106.5%;
+          }
+
+          p {
+            width: 200px;
+            height: 44px;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+
+        .m_imgs2 {
+          display: flex;
+          width: 200.49px;
+          height: 290.494px;
+
+          img {
+            width: 100.981px;
+            height: 100.981px;
+          }
+
+          h4 {
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 106.5%;
+          }
+
+          h5 {
+            font-size: 14px;
+            font-weight: 300;
+            line-height: 106.5%;
+          }
+
+          p {
+            width: 200px;
+            height: 44px;
+            text-align: center;
+            font-family: Poppins;
+            font-size: 14px;
+            font-weight: 300;
+            line-height: normal;
+          }
+        }
+      }
+
+      .m_imgs3 {
+        display: flex;
+        width: 200.49px;
+        height: 290.494px;
+        box-shadow: inset 0 0em 0em rgba(0, 0, 0, 0.1),
+          0 0 0 0.1px rgb(255, 255, 255), 0em 0em 0.1em rgba(0, 0, 0, 0.3);
+
+        img {
+          width: 100.981px;
+          height: 100.981px;
+        }
+
+        h4 {
+          font-size: 18px;
+          font-weight: 400;
+          line-height: 106.5%;
+        }
+
+        h5 {
+          font-size: 14px;
+          font-weight: 300;
+          line-height: 106.5%;
+        }
+
+        p {
+          width: 200px;
+          height: 44px;
+          text-align: center;
+          font-family: Poppins;
+          font-size: 14px;
+          font-weight: 300;
+          line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
   container {
     max-width: 1240px;
     margin: 0 auto;
   }
 
   .m_box {
+    padding: 98px 120px;
     h3 {
       font-size: 32px;
       font-weight: 600;
@@ -178,7 +317,7 @@
         .m_imgs1 {
           display: flex;
           width: 390.49px;
-          height: 371.494px;
+          height: 300.494px;
 
           img {
             width: 113.981px;
@@ -211,7 +350,7 @@
         .m_imgs2 {
           display: flex;
           width: 390.49px;
-          height: 371.494px;
+          height: 300.494px;
 
           img {
             width: 113.981px;
@@ -245,7 +384,9 @@
       .m_imgs3 {
         display: flex;
         width: 390.49px;
-        height: 371.494px;
+        height: 300.494px;
+        box-shadow: inset 0 0em 0em rgba(0, 0, 0, 0.1),
+          0 0 0 0.1px rgb(255, 255, 255), 0em 0em 0.1em rgba(0, 0, 0, 0.3);
 
         img {
           width: 113.981px;
@@ -276,5 +417,4 @@
       }
     }
   }
-  
 }
