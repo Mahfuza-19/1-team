@@ -32,9 +32,9 @@ button {
 }
 
 @media (min-width: 768px) {
-  .container{
-      max-width: 697px;
-      margin: 0 auto;
+  .container {
+    max-width: 698px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 1440px) {
@@ -153,7 +153,11 @@ nav {
   font-weight: 400;
 }
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 768px) {
+  .navbar {
+    max-width: 90%;
+    margin: 0 auto;
+  }
   .nav_menu {
     display: none;
   }
@@ -193,7 +197,6 @@ nav {
     padding: 20px 0;
     align-items: center;
     gap: 0;
-    padding-left: 60px;
   }
   .h_left h1 {
     font-size: 36px;
@@ -232,7 +235,7 @@ nav {
     margin: 0 auto;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1300px) {
   .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -1603,7 +1606,7 @@ nav {
   color: #fff;
 }
 
-@media screen and (min-width: 764px) {
+@media screen and (min-width: 768px) {
   #Contact__section {
     background-image: url(../Imags/CTA_Contact-bg.png);
     background-size: cover;
