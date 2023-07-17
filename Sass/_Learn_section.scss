@@ -1,249 +1,248 @@
-.Learn {
-  margin-top: 50px;
-  max-width: 380px;
-  .Learn_top {
-    display: flex;
-    justify-content: space-between;
-
-    h2 {
-      font-size: 16px;
-      font-weight: 600;
-      text-transform: capitalize;
-      color: $color-4;
-    }
-    .Learn_button {
-      button {
-        padding: 4px 8px;
-        border-radius: 28.295px;
-      }
-    }
-  }
-  .Learn_table {
-    margin-top: 24px;
+.Learn_section {
+  .Learn {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    // flex-wrap: wrap;
-    // margin: 0 auto;
-    grid-row: 2;
-    gap: 16px;
-    // display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 380px;
-
-    .Learn_table_1 {
-      border-radius: 2.791px;
-      box-shadow: 0px 0px 9.321612358093262px 0px rgba(203, 203, 203, 0.25);
+    // grid-template-columns: repeat(2, 1fr);
+    h2 {
+      max-width: 506px;
+      color: var(--gray-1, #333);
+      font-family: "Poppins";
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      text-transform: capitalize;
+    }
+    .three_cards {
       display: flex;
-      flex-direction: column;
-      width: 182px;
-      &:last-child {
-        grid-column: 1/3;
-        // grid-row: 2;
-      }
-      .Learn_img {
-        img:first-child {
-          width: 182px;
-          border-radius: 5px;
-        }
-        .none {
-          display: none;
-        }
-      }
-      .Learn_text {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      justify-content: center;
+      gap: 30px;
+      position: relative;
+      max-width: 1440px;
+      .icons_chevron {
+        width: 90%;
         display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        position: absolute;
         align-items: center;
-        justify-content: center;
-        // padding: 24px 24px 0;
-        margin-left: 13px;
-        .Learn_text_icon {
-          display: flex;
+        display: none;
+        .left-i {
+          left: 130px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #ef2b2b;
+          color: #09b451;
           align-items: center;
-          margin-bottom: 18px;
-          gap: 4px;
-          margin-right: 8px;
-          i {
-            font-size: 8px;
+          justify-content: center;
+          display: flex;
+        }
+        .right-i {
+          left: 130px;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          background: #ef2b2b;
+          color: #09b451;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+        }
+      }
+
+      .card1 {
+        border-radius: 10px;
+        background: #fff;
+        box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+        img {
+          max-width: 391px;
+          border-radius: 8px 8px 0 0;
+        }
+        .card_text {
+          justify-content: space-between;
+          padding: 24px 24px 0 24px;
+          display: flex;
+          align-items: start;
+          h3 {
+            max-width: 291px;
+            color: var(--gray-1, #333);
+            font-family: Poppins;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            text-transform: capitalize;
           }
           p {
+            padding-top: 6px;
+            color: #000;
+            font-family: Poppins;
             font-size: 8px;
-          }
-        }
-        h5 {
-          font-size: 14px;
-          font-weight: 500;
-          line-height: 20px; /* 142.857% */
-          text-transform: capitalize;
-          max-width: 150px;
-        }
-      }
-      .Learn_button {
-        display: flex;
-        flex-direction: column-reverse;
-        margin-top: 4px;
-        .Learn_button_left {
-          display: flex;
-          align-items: center;
-          gap: 4px;
-          margin-top: 12px;
-          margin-bottom: 24px;
-          margin-left: 14px;
-          h6 {
-            font-size: 12px;
-            color: $color-4;
-          }
-          .Learn_button_left_icon {
-            display: flex;
-            gap: 8px;
-            p {
-              font-size: 12px;
-              color: $color-4;
-              margin-right: 12px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            i {
+              padding-left: 5px;
+              font-size: 8px;
+              padding-right: 6px;
+              color: #09b451;
             }
           }
         }
-        .Learn_button_right {
-          h3 {
-            font-size: 14px;
+        .card_bottom_text {
+          padding: 36px 24px 24px 24px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          p {
+            color: var(--gray-1, #333);
+            font-family: Poppins;
+            font-size: 12px;
+            font-style: normal;
             font-weight: 500;
-            color: $color-1;
-            margin-left: 14px;
+            line-height: normal;
+            i {
+              font-size: 12px;
+              color: #09b451;
+              padding: 0 8px 0 16px;
+            }
+          }
+          h3 {
+            color: #09b451;
+            font-family: Poppins;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
           }
         }
       }
     }
   }
 }
-@media screen and (min-width: 1440px) {
-  .Learn {
-    margin-top: 98px;
-    margin-bottom: 36px;
-    max-width: 1237px;
-    .Learn_top {
-      .Learn_button {
-        display: none;
-      }
-      h2 {
-        font-size: 32px;
-        //
-        font-weight: 600;
-        text-transform: capitalize;
-        color: $color-4;
-      }
-    }
-    .Learn_table {
-      margin-top: 24px;
+@media screen and (min-width: 1400px) {
+  .Learn_section {
+    .Learn {
       display: grid;
-      align-items: start;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 380px;
-
-      .Learn_table_1 {
-        border-radius: 2.791px;
-        width: 392px;
-        // overflow: ;
-        box-shadow: 0px 0px 9.321612358093262px 0px rgba(203, 203, 203, 0.25);
-        // display: flex;
-        // flex-direction: column;
-        // flex-direction: column;
-        // width: 182px;
-        // &:last-child {
-        //   grid-column: 1/0;
-        // }
-        .Learn_img {
-          position: relative;
-
-          img:first-child {
-            width: 391px;
-            border-radius: 5px;
-          }
-          &:last-child {
-            // grid-column: 3/4;
-            // grid-row: 1;
-          }
-          .img_3 {
-          }
-          .none {
-            display: block;
-            position: absolute;
-            top: 90px;
-            left: 20px;
-          }
-          .img_none {
-            left: 310px;
-          }
-        }
-        .Learn_text {
-          display: flex;
-          // flex-direction: column;
-          padding: 24px 20px 0;
-          justify-content: space-between;
-          align-items: center;
-          max-width: 392px;
-          .Learn_text_icon {
-            display: flex;
-            max-width: 48px;
-            height: 24px;
-            align-items: center;
-            gap: 6px;
-            margin-bottom: 70px;
-
-            p {
-              font-size: 16px;
-            }
-            i {
-              font-size: 18px;
-            }
-          }
-          h5 {
-            font-size: 24px;
-            font-weight: 500;
-            line-height: normal;
-            text-transform: capitalize;
-            max-width: 340px;
-            margin-bottom: 42px;
-            // margin-top: 24px;
-          }
-        }
-        .Learn_button {
+      h2 {
+        max-width: 506px;
+        color: var(--gray-1, #333);
+        font-family: "Poppins";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .three_cards {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        justify-content: center;
+        gap: 30px;
+        position: relative;
+        max-width: 1440px;
+        .icons_chevron {
+          width: 90%;
           display: flex;
           flex-direction: row;
           justify-content: space-between;
+          position: absolute;
           align-items: center;
-
-          // justify-content: center;
-          padding: 0 35px 28px;
-          .Learn_button_left {
+          margin-top: -170px;
+          .left-i {
+            left: 130px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #fff;
+            color: #09b451;
+            align-items: center;
+            justify-content: center;
             display: flex;
-            // align-items: center;
-            gap: 16px;
-            margin: 0;
-            h6 {
-              font-size: 16px;
-              font-weight: 500;
-              color: $color-4;
-            }
+          }
+          .right-i {
+            left: 130px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: #fff;
+            color: #09b451;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+          }
+        }
 
-            .Learn_button_left_icon {
-              display: flex;
-              gap: 8px;
-              p {
-                font-size: 16px;
-                color: $color-4;
+        .card1 {
+          border-radius: 10px;
+          background: #fff;
+          box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+          img {
+            max-width: 391px;
+            border-radius: 8px 8px 0 0;
+          }
+          .card_text {
+            justify-content: space-between;
+            padding: 24px 24px 0 24px;
+            display: flex;
+            align-items: start;
+            h3 {
+              max-width: 291px;
+              color: var(--gray-1, #333);
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
+              font-weight: 500;
+              line-height: normal;
+              text-transform: capitalize;
+            }
+            p {
+              padding-top: 6px;
+              color: #000;
+              font-family: Poppins;
+              font-size: 15px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: normal;
+              i {
+                padding-left: 5px;
+                font-size: 15px;
+                padding-right: 6px;
+                color: #09b451;
               }
             }
           }
-          .Learn_button_right {
-            h3 {
-              font-size: 24px;
+          .card_bottom_text {
+            padding: 36px 24px 24px 24px;
+            display: flex;
+            // flex-direction: column-reverse;
+            align-items: center;
+            justify-content: space-between;
+            p {
+              color: var(--gray-1, #333);
+              font-family: Poppins;
+              font-size: 16px;
+              font-style: normal;
               font-weight: 500;
-              color: $color-1;
-              // margin-bottom: 10px;
-              margin: 0;
+              line-height: normal;
+              i {
+                font-size: 16px;
+                color: #09b451;
+                padding: 0 8px 0 16px;
+              }
+            }
+            h3 {
+              color: #09b451;
+              font-family: Poppins;
+              font-size: 24px;
+              font-style: normal;
+              font-weight: 600;
+              line-height: normal;
             }
           }
         }

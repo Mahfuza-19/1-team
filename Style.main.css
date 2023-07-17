@@ -146,6 +146,10 @@ nav {
 }
 
 @media screen and (min-width: 768px) {
+  .navbar {
+    max-width: 90%;
+    margin: 0 auto;
+  }
   .nav_menu {
     display: none;
   }
@@ -731,216 +735,249 @@ nav {
     height: 16px;
   }
 }
-.Learn {
-  margin-top: 50px;
-  max-width: 380px;
-}
-.Learn .Learn_top {
-  display: flex;
-  justify-content: space-between;
-}
-.Learn .Learn_top h2 {
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: capitalize;
-  color: #333;
-}
-.Learn .Learn_top .Learn_button button {
-  padding: 4px 8px;
-  border-radius: 28.295px;
-}
-.Learn .Learn_table {
-  margin-top: 24px;
+.Learn_section .Learn {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-row: 2;
-  gap: 16px;
-  align-items: center;
-  justify-content: center;
-  width: 380px;
 }
-.Learn .Learn_table .Learn_table_1 {
-  border-radius: 2.791px;
-  box-shadow: 0px 0px 9.3216123581px 0px rgba(203, 203, 203, 0.25);
+.Learn_section .Learn h2 {
+  max-width: 506px;
+  color: var(--gray-1, #333);
+  font-family: "Poppins";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Learn_section .Learn .three_cards {
   display: flex;
-  flex-direction: column;
-  width: 182px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  max-width: 1440px;
 }
-.Learn .Learn_table .Learn_table_1:last-child {
-  grid-column: 1/3;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_img img:first-child {
-  width: 182px;
-  border-radius: 5px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_img .none {
+.Learn_section .Learn .three_cards .icons_chevron {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
   display: none;
 }
-.Learn .Learn_table .Learn_table_1 .Learn_text {
-  display: flex;
+.Learn_section .Learn .three_cards .icons_chevron .left-i {
+  left: 130px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ef2b2b;
+  color: #09b451;
   align-items: center;
   justify-content: center;
-  margin-left: 13px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_text .Learn_text_icon {
   display: flex;
-  align-items: center;
-  margin-bottom: 18px;
-  gap: 4px;
-  margin-right: 8px;
 }
-.Learn .Learn_table .Learn_table_1 .Learn_text .Learn_text_icon i {
-  font-size: 8px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_text .Learn_text_icon p {
-  font-size: 8px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_text h5 {
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 20px; /* 142.857% */
-  text-transform: capitalize;
-  max-width: 150px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_button {
-  display: flex;
-  flex-direction: column-reverse;
-  margin-top: 4px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left {
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  margin-top: 12px;
-  margin-bottom: 24px;
-  margin-left: 14px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left h6 {
-  font-size: 12px;
-  color: #333;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left .Learn_button_left_icon {
-  display: flex;
-  gap: 8px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left .Learn_button_left_icon p {
-  font-size: 12px;
-  color: #333;
-  margin-right: 12px;
-}
-.Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_right h3 {
-  font-size: 14px;
-  font-weight: 500;
+.Learn_section .Learn .three_cards .icons_chevron .right-i {
+  left: 130px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ef2b2b;
   color: #09b451;
-  margin-left: 14px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.Learn_section .Learn .three_cards .card1 {
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+}
+.Learn_section .Learn .three_cards .card1 img {
+  max-width: 391px;
+  border-radius: 8px 8px 0 0;
+}
+.Learn_section .Learn .three_cards .card1 .card_text {
+  justify-content: space-between;
+  padding: 24px 24px 0 24px;
+  display: flex;
+  align-items: start;
+}
+.Learn_section .Learn .three_cards .card1 .card_text h3 {
+  max-width: 291px;
+  color: var(--gray-1, #333);
+  font-family: Poppins;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: capitalize;
+}
+.Learn_section .Learn .three_cards .card1 .card_text p {
+  padding-top: 6px;
+  color: #000;
+  font-family: Poppins;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.Learn_section .Learn .three_cards .card1 .card_text p i {
+  padding-left: 5px;
+  font-size: 8px;
+  padding-right: 6px;
+  color: #09b451;
+}
+.Learn_section .Learn .three_cards .card1 .card_bottom_text {
+  padding: 36px 24px 24px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Learn_section .Learn .three_cards .card1 .card_bottom_text p {
+  color: var(--gray-1, #333);
+  font-family: Poppins;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.Learn_section .Learn .three_cards .card1 .card_bottom_text p i {
+  font-size: 12px;
+  color: #09b451;
+  padding: 0 8px 0 16px;
+}
+.Learn_section .Learn .three_cards .card1 .card_bottom_text h3 {
+  color: #09b451;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 
-@media screen and (min-width: 1440px) {
-  .Learn {
-    margin-top: 98px;
-    margin-bottom: 36px;
-    max-width: 1237px;
-  }
-  .Learn .Learn_top .Learn_button {
-    display: none;
-  }
-  .Learn .Learn_top h2 {
-    font-size: 32px;
-    font-weight: 600;
-    text-transform: capitalize;
-    color: #333;
-  }
-  .Learn .Learn_table {
-    margin-top: 24px;
+@media screen and (min-width: 1400px) {
+  .Learn_section .Learn {
     display: grid;
-    align-items: start;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 380px;
   }
-  .Learn .Learn_table .Learn_table_1 {
-    border-radius: 2.791px;
-    width: 392px;
-    box-shadow: 0px 0px 9.3216123581px 0px rgba(203, 203, 203, 0.25);
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_img {
-    position: relative;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_img img:first-child {
-    width: 391px;
-    border-radius: 5px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_img .none {
-    display: block;
-    position: absolute;
-    top: 90px;
-    left: 20px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_img .img_none {
-    left: 310px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_text {
-    display: flex;
-    padding: 24px 20px 0;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 392px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_text .Learn_text_icon {
-    display: flex;
-    max-width: 48px;
-    height: 24px;
-    align-items: center;
-    gap: 6px;
-    margin-bottom: 70px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_text .Learn_text_icon p {
+  .Learn_section .Learn h2 {
+    max-width: 506px;
+    color: var(--gray-1, #333);
+    font-family: "Poppins";
     font-size: 16px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_text .Learn_text_icon i {
-    font-size: 18px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_text h5 {
-    font-size: 24px;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 600;
     line-height: normal;
     text-transform: capitalize;
-    max-width: 340px;
-    margin-bottom: 42px;
   }
-  .Learn .Learn_table .Learn_table_1 .Learn_button {
+  .Learn_section .Learn .three_cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    position: relative;
+    max-width: 1440px;
+  }
+  .Learn_section .Learn .three_cards .icons_chevron {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: absolute;
     align-items: center;
-    padding: 0 35px 28px;
+    margin-top: -170px;
   }
-  .Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left {
-    display: flex;
-    gap: 16px;
-    margin: 0;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left h6 {
-    font-size: 16px;
-    font-weight: 500;
-    color: #333;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left .Learn_button_left_icon {
-    display: flex;
-    gap: 8px;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_left .Learn_button_left_icon p {
-    font-size: 16px;
-    color: #333;
-  }
-  .Learn .Learn_table .Learn_table_1 .Learn_button .Learn_button_right h3 {
-    font-size: 24px;
-    font-weight: 500;
+  .Learn_section .Learn .three_cards .icons_chevron .left-i {
+    left: 130px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
     color: #09b451;
-    margin: 0;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .Learn_section .Learn .three_cards .icons_chevron .right-i {
+    left: 130px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #fff;
+    color: #09b451;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .Learn_section .Learn .three_cards .card1 {
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: 0px 0px 20px 0px rgba(203, 203, 203, 0.25);
+  }
+  .Learn_section .Learn .three_cards .card1 img {
+    max-width: 391px;
+    border-radius: 8px 8px 0 0;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_text {
+    justify-content: space-between;
+    padding: 24px 24px 0 24px;
+    display: flex;
+    align-items: start;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_text h3 {
+    max-width: 291px;
+    color: var(--gray-1, #333);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_text p {
+    padding-top: 6px;
+    color: #000;
+    font-family: Poppins;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_text p i {
+    padding-left: 5px;
+    font-size: 15px;
+    padding-right: 6px;
+    color: #09b451;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_bottom_text {
+    padding: 36px 24px 24px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_bottom_text p {
+    color: var(--gray-1, #333);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_bottom_text p i {
+    font-size: 16px;
+    color: #09b451;
+    padding: 0 8px 0 16px;
+  }
+  .Learn_section .Learn .three_cards .card1 .card_bottom_text h3 {
+    color: #09b451;
+    font-family: Poppins;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
   }
 }
 .Education .Education_top h2 {
@@ -949,6 +986,9 @@ nav {
   color: #000;
   margin-top: 48px;
   margin-bottom: 32px;
+}
+.Education .Education_Table {
+  margin: 0 auto;
 }
 .Education .Education_Table .Education_left {
   position: relative;
@@ -1010,7 +1050,7 @@ nav {
   max-width: 326px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 760px) {
   .Education .Education_top h2 {
     font-size: 32px;
     font-weight: 600;
@@ -1020,13 +1060,10 @@ nav {
   }
   .Education .Education_Table {
     display: flex;
-    gap: 98px;
+    gap: 118px;
   }
   .Education .Education_Table .Education_left {
     position: relative;
-  }
-  .Education .Education_Table .Education_left .edo img {
-    font-size: 392px;
   }
   .Education .Education_Table .Education_left .Education_div {
     border-radius: 6.022px 6.022px 15.055px 6.022px;
@@ -1036,7 +1073,7 @@ nav {
     box-shadow: 0px 0px 66.4558181763px 0px rgba(112, 112, 112, 0.25);
     position: absolute;
     top: 200px;
-    left: 310px;
+    left: 350px;
     padding: 12px 9px 26px;
   }
   .Education .Education_Table .Education_left .Education_div .Education_line {
@@ -1063,7 +1100,76 @@ nav {
   }
   .Education .Education_right .Education_text h2 {
     font-size: 48px;
-    max-width: 533px;
+    max-width: 580px;
+    font-weight: 600;
+    margin: 0;
+  }
+  .Education .Education_right .Education_icon {
+    margin-bottom: 48px;
+  }
+  .Education .Education_right .Education_icon .Education_icon_1 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  .Education .Education_right .Education_icon .Education_icon_1 p {
+    font-size: 20px;
+    font-weight: 500;
+    max-width: 525px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .Education .Education_top h2 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 98px;
+    margin-bottom: 64px;
+  }
+  .Education .Education_Table {
+    display: flex;
+    gap: 118px;
+  }
+  .Education .Education_Table .Education_left {
+    position: relative;
+  }
+  .Education .Education_Table .Education_left .Education_div {
+    border-radius: 6.022px 6.022px 15.055px 6.022px;
+    background: #fff;
+    text-align: center;
+    width: 129px;
+    box-shadow: 0px 0px 66.4558181763px 0px rgba(112, 112, 112, 0.25);
+    position: absolute;
+    top: 200px;
+    left: 350px;
+    padding: 12px 9px 26px;
+  }
+  .Education .Education_Table .Education_left .Education_div .Education_line {
+    position: relative;
+    margin-top: 8px;
+  }
+  .Education .Education_Table .Education_left .Education_div .Education_line h3 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #09b451;
+  }
+  .Education .Education_Table .Education_left .Education_div .Education_line h4 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    margin-top: 5px;
+  }
+  .Education .Education_Table .Education_left .Education_div .Education_line img {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    width: 39px;
+  }
+  .Education .Education_right .Education_text h2 {
+    font-size: 48px;
+    max-width: 580px;
     font-weight: 600;
     margin: 0;
   }
