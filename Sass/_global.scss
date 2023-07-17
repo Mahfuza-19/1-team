@@ -40,11 +40,14 @@ button {
   font-weight: 600;
   font-size: 16px;
 }
+
 @media (min-width: 768px) {
   .container {
     max-width: 90%;
     margin:0 auto;
+  }
 }
+
 @media (min-width:768px){
     .container{
         max-width: 90%;
