@@ -1,7 +1,7 @@
 nav{
     padding: 28px 0;
     margin-bottom: 10px;
-    box-shadow: 0 0 10px 0 gray;
+    box-shadow: 0 0 10px 0 rgb(241, 235, 235);
 }
 .navbar{
     display: flex;
@@ -101,7 +101,7 @@ nav{
     border-radius: 4.47px;
 }
 
-@media screen and (min-width: 764px){
+@media screen and (min-width: 768px){
     .nav_menu{
         display: none;
     }
@@ -186,7 +186,7 @@ nav{
         margin: 0 auto;
     }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
     .container{
         max-width: 1240px;
         margin: 0 auto;
@@ -204,7 +204,7 @@ nav{
         display: none;
     }
     .nav_left{
-        gap: 180px;
+        gap: 160px;
         ul{
             display: flex;
             gap: 35px;
@@ -265,6 +265,7 @@ nav{
         border-radius: 30px;
         padding: 20px 0;
         align-items: center;
+        padding-left: 60px;
     }
     .h_left{
         h1{
