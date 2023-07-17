@@ -20,6 +20,7 @@ body {
   box-sizing: border-box;
   font-family: $font-1;
 }
+
 a {
   text-decoration: none;
 }
@@ -27,31 +28,36 @@ a {
 li {
   list-style: none;
 }
-
-button{
-    background-color:$color-1 ;
-    border: none;
-    color:$color-2;
-    font-weight: 600;
-    font-size: 16px;
+img {
+  // max-width: 100%;
 }
 
-.container{
+button {
+  background-color: $color-1;
+  border: none;
+  cursor: pointer;
+  color: $color-2;
+  font-weight: 600;
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+  .container {
     max-width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
+  }
 }
-@media (min-width:768px){
-    .container{
-        max-width: 698px;
-        margin: 0 auto;
-    }
+@media (min-width: 768px) {
+  .container {
+    max-width: 90%;
+    margin: 0 auto;
+  }
 }
-@media  (min-width:1440px) {
-    .container{
-        max-width: 1280px;
-        margin: 0 auto;
-    }
+@media (min-width: 1440px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
 }
-body{
-    overflow-x: hidden;
+body {
+  overflow-x: hidden;
 }
