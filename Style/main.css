@@ -35,7 +35,7 @@ button {
 }
 @media (min-width: 768px) {
   .container {
-    max-width: 90%;
+    max-width: 697px;
     margin: 0 auto;
   }
 }
@@ -139,6 +139,24 @@ nav {
   font-weight: 400;
 }
 
+.info2 {
+  display: flex;
+  gap: 10.74px;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  padding: 9px 15px;
+  width: 210px;
+  height: 54px;
+  background: #DFF;
+  border-radius: 4.47px;
+}
+.info2 p {
+  font-size: 14.318px;
+  font-weight: 400;
+}
+
+
 @media screen and (min-width: 768px) {
   .nav_menu {
     display: none;
@@ -190,7 +208,7 @@ nav {
     margin-top: 30px;
   }
 }
-@media screen and (min-width: 1300px) {
+@media screen and (min-width: 1440px) {
   .container {
     max-width: 1240px;
     margin: 0 auto;
@@ -251,6 +269,19 @@ nav {
   #hero .hhero {
     background: none;
   }
+
+  .h_tepa {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(/Imags/Frame\ 6516_hero_bac.svg);
+    background-repeat: no-repeat;
+    background-size: 2372px 1085px;
+    border-radius: 30px;
+    padding: 20px 0;
+    align-items: center;
+    padding-left: 60px;
+  }
+
   .h_left h1 {
     font-size: 60px;
     max-width: 571px;
